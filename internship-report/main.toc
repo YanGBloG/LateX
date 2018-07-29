@@ -1,0 +1,34 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}KH\IeC {\'A}I QU\IeC {\'A}T V\IeC {\`\ECIRCUMFLEX } \IeC {\DJ }\IeC {\horn O}N V\IeC {\d I} TH\IeC {\d \UHORN }C T\IeC {\d \ACIRCUMFLEX }P}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}T\IeC {\h \ocircumflex }ng quan, l\IeC {\d i}ch s\IeC {\h \uhorn } h\IeC {\`\i }nh th\IeC {\`a}nh, c\IeC {\horn o} c\IeC {\'\acircumflex }u t\IeC {\h \ocircumflex } ch\IeC {\'\uhorn }c v\IeC {\`a} ch\IeC {\'\uhorn }c n\IeC {\u a}ng nhi\IeC {\d \ecircumflex }m v\IeC {\d u} c\IeC {\h u}a C\IeC {\^o}ng ty Li\IeC {\^e}n doanh JVPC}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}T\IeC {\h \ocircumflex }ng quan}{1}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}L\IeC {\d i}ch s\IeC {\h \uhorn } h\IeC {\`\i }nh th\IeC {\`a}nh}{1}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}L\IeC {\d i}ch s\IeC {\h \uhorn } ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n L\IeC {\^o} 15-2}{2}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}C\IeC {\horn o} c\IeC {\'\acircumflex }u t\IeC {\h \ocircumflex } ch\IeC {\'\uhorn }c}{3}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.5}Ch\IeC {\'\uhorn }c n\IeC {\u a}ng, nhi\IeC {\d \ecircumflex }m v\IeC {\d u}}{4}{subsection.1.1.5}
+\contentsline {section}{\numberline {1.2}Ph\IeC {\`o}ng C\IeC {\^o}ng ngh\IeC {\d \ecircumflex } m\IeC {\h o}}{4}{section.1.2}
+\contentsline {chapter}{\numberline {2}K\IeC {\'\ECIRCUMFLEX }T QU\IeC {\h A} TH\IeC {\d \UHORN }C T\IeC {\d \ACIRCUMFLEX }P}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}N\IeC {\d \ocircumflex }i dung c\IeC {\^o}ng vi\IeC {\d \ecircumflex }c \IeC {\dj }\IeC {\horn u}\IeC {\d \ohorn }c giao}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}N\IeC {\d \ocircumflex }i dung v\IeC {\`a} m\IeC {\d u}c ti\IeC {\^e}u}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Ph\IeC {\horn u}\IeC {\horn o}ng ph\IeC {\'a}p ti\IeC {\'\ecircumflex }n h\IeC {\`a}nh, ti\IeC {\'\ecircumflex }n \IeC {\dj }\IeC {\d \ocircumflex } v\IeC {\`a} k\IeC {\'\ecircumflex }t qu\IeC {\h a}}{6}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}T\IeC {\d \uhorn } nh\IeC {\d \acircumflex }n x\IeC {\'e}t v\IeC {\`\ecircumflex } m\IeC {\'\uhorn }c \IeC {\dj }\IeC {\d \ocircumflex } ho\IeC {\`a}n th\IeC {\`a}nh c\IeC {\^o}ng vi\IeC {\d \ecircumflex }c \IeC {\dj }\IeC {\horn u}\IeC {\d \ohorn }c giao}{6}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Nh\IeC {\~\uhorn }ng ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c, k\IeC {\~\i } n\IeC {\u a}ng v\IeC {\`a} kinh nghi\IeC {\d \ecircumflex }m thu \IeC {\dj }\IeC {\horn u}\IeC {\d \ohorn }c}{6}{section.2.2}
+\contentsline {chapter}{\numberline {3}N\IeC {\d \OCIRCUMFLEX }I DUNG K\IeC {\'\ECIRCUMFLEX }T QU\IeC {\h A} TH\IeC {\d \UHORN }C T\IeC {\d \ACIRCUMFLEX }P}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Ph\IeC {\^a}n t\IeC {\'\i }ch th\IeC {\h \uhorn } v\IeC {\h i}a}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}T\IeC {\h \ocircumflex }ng quan}{7}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Ph\IeC {\^a}n t\IeC {\'\i }ch th\IeC {\h \uhorn } v\IeC {\h i}a b\IeC {\`\abreve }ng ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m PanSystem}{8}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}PanSystem}{8}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Th\IeC {\d \uhorn }c h\IeC {\`a}nh v\IeC {\'\ohorn }i PanSystem}{9}{subsubsection.3.1.2.2}
+\contentsline {section}{\numberline {3.2}Ph\IeC {\horn u}\IeC {\horn o}ng tr\IeC {\`\i }nh c\IeC {\^a}n b\IeC {\`\abreve }ng v\IeC {\d \acircumflex }t ch\IeC {\'\acircumflex }t}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}T\IeC {\h \ocircumflex }ng quan}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}D\IeC {\d \uhorn } \IeC {\dj }o\IeC {\'a}n \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh v\IeC {\h i}a b\IeC {\`\abreve }ng MBAL}{20}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Petroleum Experts v\IeC {\`a} m\IeC {\^o} \IeC {\dj }un MBAL}{20}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Th\IeC {\d \uhorn }c h\IeC {\`a}nh v\IeC {\'\ohorn }i MBAL}{21}{subsubsection.3.2.2.2}
+\contentsline {section}{\numberline {3.3}M\IeC {\^o} ph\IeC {\h o}ng v\IeC {\h i}a}{40}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}T\IeC {\h \ocircumflex }ng quan}{40}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}M\IeC {\^o} ph\IeC {\h o}ng v\IeC {\h i}a v\IeC {\'\ohorn }i ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m ECLIPSE}{42}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}ECLIPSE}{42}{subsubsection.3.3.2.1}
+\contentsline {chapter}{\numberline {4}K\IeC {\'\ECIRCUMFLEX }T LU\IeC {\d \ACIRCUMFLEX }N V\IeC {\`A} KI\IeC {\'\ECIRCUMFLEX }N NGH\IeC {\d I}}{44}{chapter.4}
+\contentsline {section}{\numberline {4.1}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Ki\IeC {\'\ecircumflex }n ngh\IeC {\d i}}{44}{section.4.2}
+\contentsfinish 

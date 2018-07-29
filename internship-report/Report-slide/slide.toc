@@ -1,0 +1,6 @@
+\select@language {vietnam}
+\beamer@sectionintoc {1}{T\IeC {\h \ocircumflex }ng quan}{3}{0}{1}
+\beamer@sectionintoc {2}{Nguy\IeC {\^e}n l\IeC {\'y} c\IeC {\horn o} b\IeC {\h a}n}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Ph\IeC {\^a}n t\IeC {\'\i }ch th\IeC {\h \uhorn } v\IeC {\h i}a v\IeC {\'\ohorn }i ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m PanSystem}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Ph\IeC {\^a}n t\IeC {\'\i }ch c\IeC {\^a}n b\IeC {\`\abreve }ng v\IeC {\d \acircumflex }t ch\IeC {\'\acircumflex }t v\IeC {\'\ohorn }i ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m MBAL}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{M\IeC {\^o} ph\IeC {\h o}ng v\IeC {\h i}a v\IeC {\'\ohorn }i ph\IeC {\`\acircumflex }n m\IeC {\`\ecircumflex }m ECLIPSE }{10}{0}{2}

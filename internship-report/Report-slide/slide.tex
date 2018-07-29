@@ -1,0 +1,146 @@
+\PassOptionsToPackage{unicode=true}{hyperref}
+\documentclass[11pt]{beamer}
+
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+  \usetheme{Madrid}       % or try default, Darmstadt, Warsaw, ...
+  \usecolortheme{default} % or try albatross, beaver, crane, ...
+  \usefonttheme{serif}    % or try default, structurebold, ...
+  \setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{caption}[numbered]
+} 
+
+\usepackage[vietnam]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{sansmathaccent}
+\usepackage{vietnam}
+\usepackage{pgfpages}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphics} % thư viện để hiển thị ảnh
+\usepackage{caption} % thư viện để đặt caption
+\usepackage{booktabs} % thư viện để vẽ table
+\usepackage{lmodern}
+\usepackage{hyperref}
+%\pdfmapfile{+sansmathaccent.map}
+%\pgfpagesuselayout{resize to}[%
+%  physical paper width=8in, physical paper height=6in]
+
+% Here's where the presentation starts, with the info for the title slide
+\title[Japan Vietnam Petroleum Company]{Intership Report}
+\author{Trọng Nghĩa}
+\institute{PVU}
+\date{\today}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% tạo toc
+\begin{frame}{Nội dung}
+  \tableofcontents
+\end{frame}
+
+\section{Tổng quan}
+\begin{frame}{Tổng quan}
+	\begin{itemize}
+		\item Phân tích thử vỉa với phần mềm PanSystem
+			\begin{itemize}
+				\item[-] Phân tích thử vỉa
+				\item[-] Thực hành với phần mềm PanSystem
+			\end{itemize}
+		\item Phân tích cân bằng vật chất với phần mềm MBAL
+			\begin{itemize}
+				\item[-] Phân tích cân bằng vật chất
+				\item[-] Thực hành với phần mềm MBAL
+			\end{itemize}
+		\item Mô phỏng vỉa với ECLIPSE
+			\item[-] Mô phỏng vỉa
+			\item[-] Thực hành với ECLIPSE
+	\end{itemize}
+\end{frame}
+\section{Nguyên lý cơ bản}
+\subsection{Phân tích thử vỉa với phần mềm PanSystem}
+\begin{frame}{Phân tích thử vỉa}
+Mục tiêu:
+	\begin{itemize}
+		\item Độ thấm
+		\item Mức độ bất đồng nhất của vỉa (Vỉa hai độ rỗng, đa lớp, vỉa phức hợp...)
+		\item Hệ số nhiễm bẩn 
+		\item Hình dạng vỉa và kích thước vỉa
+		\item Áp suất vỉa ban đầu
+	\end{itemize}
+\end{frame}
+\begin{frame}{Phân tích thử vỉa}
+Phương trình phân tán \eqref{eqn:diffusion}:
+	\begin{equation}\label{eqn:diffusion}
+		\dfrac{1}{r}\dfrac{\partial}{\partial r}\dfrac{r\partial p}{\partial r} = \dfrac{\phi\rho c}{k}\dfrac{\partial p}{\partial t}
+	\end{equation}
+\end{frame}
+\begin{frame}{PanSystem}
+Ứng dụng:
+	\begin{itemize}
+		\item Phân tích thử vỉa, khớp lịch sử bằng các phương pháp \textit{Số học, Giải tích}.
+		\item Dự đoán khai thác dài hạn
+		\item Thiết kế thử vỉa
+	\end{itemize}
+\end{frame}
+\subsection{Phân tích cân bằng vật chất với phần mềm MBAL}
+\begin{frame}{Cân bằng vật chất}
+Phương trình cơ bản:\\
+\hspace*{1cm} Lượng lưu chất vỉa ban đầu\\
+\hspace*{2cm} = Lượng lưu chất khai thác + Lượng lưu chất còn lại\\
+Dạng đơn giản:
+	\begin{equation}\label{eqn:straight_line}
+		F = N \times{E_t} + W_e
+	\end{equation}
+Với:\\
+\hspace*{1cm} $F$ là lượng khai thác được\\
+\hspace*{1cm} $N$ là lượng HC (Hydrocarbon) ban đầu trong vỉa\\
+\hspace*{1cm} $E_t$ là lượng lưu chất giãn nở\\
+\hspace*{1cm} $W_e$ là lượng nước thâm nhập từ tầng nước đáy.
+\end{frame}
+\begin{frame}{Cân bằng vật chất}
+Ứng dụng:
+	\begin{itemize}
+		\item Tính toán định lượng các thông số vỉa (HC, kích thước mũ khí...)
+		\item Xác định tầng nước đáy, góc bao phủ
+		\item Xác định cơ chế khai thác.
+	\end{itemize}
+\end{frame}
+\begin{frame}{Phần mềm MBAL}
+Chức năng:
+	\begin{itemize}
+		\item Phân tích cân bằng vật chất
+		\item Phân tích đường công suy giảm
+		\item Mô phỏng Monte Carlo
+		\item Phân chia rạn giới vỉa
+		\item Phân tích vỉa đa lớp
+		\item Phân tích vỉa khí có độ thấm thấp.
+	\end{itemize}
+\end{frame}
+\subsection{Mô phỏng vỉa với phần mềm ECLIPSE	}
+\begin{frame}{Mô phỏng vỉa}
+Các phương trình cơ bản:
+	\begin{itemize}
+		\item Định luật Darcy \eqref{eqn:darcy_law} (bỏ qua ảnh hưởng của trọng lực)
+		\item Phương trình cân bằng khối lượng \eqref{eqn:mass_balance}
+		\item Phương trình mô phỏng dòng chảy \eqref{eqn:flow_equa} (bỏ qua ảnh hưởng của trọng lực).
+	\end{itemize}
+	\begin{equation}\label{eqn:darcy_law}
+		q = -\dfrac{k}{\mu}\nabla{P}
+	\end{equation}
+	\begin{equation}\label{eqn:mass_balance}
+		-\nabla{M}=\dfrac{\partial}{\partial t}(\phi\rho)+Q
+	\end{equation}
+	\begin{equation}\label{eqn:flow_equa}
+		\nabla[\lambda(\nabla{P}-\gamma\nabla{z})]=\dfrac{\partial}{\partial{t}}\dfrac{\phi}{\beta}+\dfrac{Q}{\rho}
+	\end{equation}
+\end{frame}
+
+\end{document}
