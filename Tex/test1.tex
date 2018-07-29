@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{vietnam}
+\usepackage[left=3cm, right=2cm, top=2.5cm, bottom=2cm]{geometry}
+\usepackage{amsmath}
+%\usepackage{asmfonts}
+\usepackage{float}
+\usepackage{amssymb} 
+\usepackage{graphicx} % thư viện hiển thị hình ảnh
+\usepackage[hidelinks, unicode]{hyperref} % thư viện link tới chương
+\usepackage{caption} % thư viện đặt caption
+\usepackage[table]{xcolor} % thư viện hiển thị màu cho bảng
+%\usepackage{indentfirst}
+\usepackage{mathptmx}
+\usepackage{booktabs, tabularx}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{courier}
+\newcommand{\code}[1]{\texttt{#1}}
+
+\renewcommand{\baselinestretch}{1.5}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\geometry{letterpaper}
+\title{\textbf{ĐỒ ÁN KHAI THÁC}}
+\author{Truong Manh Phi\\Bui Trong Nghia}
+
+\begin{document}
+\noindent
+\textbf{Response Surface Regression:\\
+Oil tertiary recovery versus oil viscosity and polymer viscosity}\\
+\newline
+\code{Analysis of Variance}\\
+\newline
+\code{Source}\hspace*{3cm}\code{DF}\hspace*{1cm}\code{Adj SS}\hspace*{1cm}\code{Adj MS}\hspace*{1cm}\code{F-Value}\hspace*{1cm}\code{P-Value}\\
+\code{Model}\hspace*{3.5cm}\code{5}\hspace*{1cm}\code{419.28}\hspace*{1cm}\code{083.86}\hspace*{1.5cm}\code{10.17}\hspace*{1.4cm}\code{0.001}\\
+\hspace*{0.5cm}\code{Linear}\hspace*{2.75cm}\code{2}\hspace*{1cm}\code{134.50}\hspace*{1cm}\code{067.25}\hspace*{1.75cm}\code{8.15}\hspace*{1.4cm}\code{0.007}\\
+\hspace*{1cm}\code{muy o}\hspace*{2.5cm}\code{1}\hspace*{1cm}\code{043.28}\hspace*{1cm}\code{043.28}\hspace*{1.5cm}\code{05.25}\hspace*{1.4cm}\code{0.007}\\
+\hspace*{1cm}\code{muy p}\hspace*{2.5cm}\code{1}\hspace*{1cm}\code{083.15}\hspace*{1cm}\code{083.15}\hspace*{1.5cm}\code{10.08}\hspace*{1.4cm}\code{0.009}\\
+\hspace*{0.5cm}\code{Square}\hspace*{2.75cm}\code{2}\hspace*{1cm}\code{018.97}\hspace*{1cm}\code{009.49}\hspace*{1.5cm}\code{01.15}\hspace*{1.4cm}\code{0.352}\\
+\hspace*{1cm}\code{muy o.muy o}\hspace*{1cm}\code{1}\hspace*{1.25cm}\code{03.98}\hspace*{1.25cm}\code{03.98}\hspace*{1.75cm}\code{0.48}\hspace*{1.4cm}\code{0.502}\\
+\hspace*{1cm}\code{muy p.muy p}\hspace*{1cm}\code{1}\hspace*{1cm}\code{018.85}\hspace*{1cm}\code{018.85}\hspace*{1.75cm}\code{2.29}\hspace*{1.4cm}\code{0.159}\\
+\hspace*{0.5cm}\code{2-Way Interaction}\hspace*{0.05cm}\code{1}\hspace*{1.25cm}\code{01.67}\hspace*{1.25cm}\code{01.67}\hspace*{1.75cm}\code{0.20}\hspace*{1.4cm}\code{0.662}\\
+\hspace*{1cm}\code{muy o.muy p}\hspace*{1.01cm}\code{1}\hspace*{1.25cm}\code{01.67}\hspace*{1.25cm}\code{01.67}\hspace*{1.75cm}\code{0.20}\hspace*{1.4cm}\code{0.662}\\
+\code{Error}\hspace*{3.25cm}\code{11}\hspace*{1cm}\code{090.72}\hspace*{1.25cm}\code{08.23}\\
+\code{Total}\hspace*{3.26cm}\code{16}\hspace*{0.755cm}\code{0510.00}\\
+\newline
+\code{Model Summary}\\
+\hspace*{2cm}\code{S}\hspace*{1.5cm}\code{R-sq}\hspace*{1.5cm}\code{R-sq(adj)}\hspace*{1.5cm}\code{R-sq(Pred)}\\
+\hspace*{0.49cm}\code{2.87184}\hspace*{1cm}\code{82.21\%}\hspace*{2.15cm}\code{74.14\%}\hspace*{2.5cm}\code{60.83\%}\newpage
+\noindent
+\code{Coded Coefficients}\\
+\code{Term}\hspace*{3cm}\code{Coef}\hspace*{1cm}\code{SE Coef}\hspace*{1cm}\code{T-Value}\hspace*{1cm}\code{P-Value}\hspace*{1cm}\code{VIF}\\
+\code{Constant}\hspace*{1.8cm}\code{23.89}\hspace*{1.7cm}\code{2.73}\hspace*{1.7cm}\code{8.76}\hspace*{1.4cm}\code{0.000}\hspace*{1.5cm}\\
+\code{muy o}\hspace*{2.3cm}\code{-09.52}\hspace*{1.7cm}\code{4.16}\hspace*{1.45cm}\code{-2.29}\hspace*{1.4cm}\code{0.043}\hspace*{0.5cm}\code{22.87}\\
+\code{muy p}\hspace*{2.55cm}\code{16.30}\hspace*{1.7cm}\code{5.13}\hspace*{1.7cm}\code{3.18}\hspace*{1.4cm}\code{0.009}\hspace*{0.5cm}\code{12.88}\\
+\code{muy o.muy o}\hspace*{1.05cm}\code{-2.06}\hspace*{1.7cm}\code{2.97}\hspace*{1.45cm}\code{-0.69}\hspace*{1.4cm}\code{0.502}\hspace*{0.75cm}\code{2.66}\\
+\code{muy p.muy p}\hspace*{0.8cm}\code{-06.47}\hspace*{1.7cm}\code{4.28}\hspace*{1.45cm}\code{-1.51}\hspace*{1.4cm}\code{0.159}\hspace*{0.75cm}\code{4.26}\\
+\code{muy o.muy p}\hspace*{0.8cm}\code{-03.08}\hspace*{1.7cm}\code{6.85}\hspace*{1.45cm}\code{-0.45}\hspace*{1.4cm}\code{0.662}\hspace*{0.5cm}\code{25.95}\\
+\newline
+\code{Regression Equation in Uncoded Units}\\
+\code{E = -0.27 - 0.0033muy o + 1.059muy p + 0.000008muy o.muy o \\ \hspace*{4cm}- 0.00525muy p.muy p - 0.000172muy o.muy p}\\
+%\newline
+%\code{Fits and Diagnostics for Unusual Observations}\\
+%\code{Obs}\hspace*{2cm}\code{E}\hspace*{1.5cm}\code{Fit}\hspace*{1.5cm}\code{Resid}\hspace*{1.5cm}\code{Std Resid}\\
+%\hspace*{0.25cm}\code{17}\hspace*{1cm}\code{19.00}\hspace*{1cm}\code{24.11}\hspace*{1.5cm}\code{-5.11}\hspace*{2.5cm}\code{-2.11}\hspace{1cm}\code{R}\\
+%\hspace*{0.25cm}\code{19}\hspace*{1cm}\code{21.00}\hspace*{1cm}\code{19.69}\hspace*{1.75cm}\code{1.31}\hspace*{2.75cm}\code{1.54}\hspace{1cm}\code{X}\\
+%\code{R: Large residual}\\
+%\code{X: Unsual X}
+\end{document}
