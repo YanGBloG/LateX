@@ -1,0 +1,41 @@
+\contentsline {section}{L\IeC {\`\OHORN }I CAM K\IeC {\'\ECIRCUMFLEX }T}{}{Item.10}
+\contentsline {section}{L\IeC {\`\OHORN }I C\IeC {\h A}M \IeC {\horn O}N}{i}{Item.10}
+\contentsline {section}{Danh ph\IeC {\'a}p v\IeC {\`a} k\IeC {\'\i } hi\IeC {\d \ecircumflex }u}{ii}{section*.4}
+\contentsline {section}{M\IeC {\d u}c l\IeC {\d u}c}{2}{section*.5}
+\contentsline {section}{Danh s\IeC {\'a}ch b\IeC {\h a}ng}{3}{section*.6}
+\contentsline {section}{Danh s\IeC {\'a}ch h\IeC {\`\i }nh}{4}{section*.7}
+\contentsline {section}{\numberline {1}T\IeC {\h \ocircumflex }ng quan}{5}{section.1}
+\contentsline {section}{\numberline {2}C\IeC {\horn o} s\IeC {\h \ohorn } l\IeC {\'y} thuy\IeC {\'\ecircumflex }t}{9}{section.2}
+\contentsline {subsection}{\numberline {2.1}Thu h\IeC {\`\ocircumflex }i d\IeC {\`\acircumflex }u t\IeC {\u a}ng c\IeC {\horn u}\IeC {\`\ohorn }ng}{9}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Polymer flooding trong thu h\IeC {\`\ocircumflex }i d\IeC {\`\acircumflex }u t\IeC {\u a}ng c\IeC {\horn u}\IeC {\`\ohorn }ng}{10}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Nguy\IeC {\^e}n t\IeC {\'\abreve }c v\IeC {\`a} c\IeC {\horn o} ch\IeC {\'\ecircumflex }}{11}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Nh\IeC {\~\uhorn }ng polymer th\IeC {\^o}ng d\IeC {\d u}ng}{12}{subsubsection.2.2.2}
+\contentsline {paragraph}{\numberline {2.2.2.1}Hydrolyzed Polyacrylamides (HPAM)}{12}{paragraph.2.2.2.1}
+\contentsline {paragraph}{\numberline {2.2.2.2}Xanthan Gum/Biopolymer}{13}{paragraph.2.2.2.2}
+\contentsline {paragraph}{\numberline {2.2.2.3}Salinity-Tolerant\IeC {\hskip .5em\relax }Polyacrylamide (KYAPM)}{14}{paragraph.2.2.2.3}
+\contentsline {paragraph}{\numberline {2.2.2.4}2-Acrylamide-2-Methyl\IeC {\hskip .5em\relax }Propane-Sulfonate\IeC {\hskip .5em\relax }Copolymer}{15}{paragraph.2.2.2.4}
+\contentsline {paragraph}{\numberline {2.2.2.5}New polymer}{16}{paragraph.2.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.3}Nh\IeC {\~\uhorn }ng t\IeC {\'\i }nh ch\IeC {\'\acircumflex }t c\IeC {\horn o} b\IeC {\h a}n}{17}{subsubsection.2.2.3}
+\contentsline {paragraph}{\numberline {2.2.3.1}\IeC {\DJ }\IeC {\d \ocircumflex } nh\IeC {\'\ohorn }t}{17}{paragraph.2.2.3.1}
+\contentsline {paragraph}{\numberline {2.2.3.2}T\IeC {\'\i }nh ch\IeC {\'\acircumflex }t l\IeC {\horn u}u bi\IeC {\'\ecircumflex }n}{17}{paragraph.2.2.3.2}
+\contentsline {paragraph}{\numberline {2.2.3.3}\IeC {\DJ }\IeC {\d \ocircumflex } \IeC {\h \ocircumflex }n \IeC {\dj }\IeC {\d i}nh}{18}{paragraph.2.2.3.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Hi\IeC {\d \ecircumflex }u su\IeC {\'\acircumflex }t \IeC {\dj }\IeC {\h \acircumflex }y}{19}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Hi\IeC {\d \ecircumflex }u su\IeC {\'\acircumflex }t qu\IeC {\'e}t}{19}{subsubsection.2.2.5}
+\contentsline {subsection}{\numberline {2.3}T\IeC {\h i} s\IeC {\'\ocircumflex } \IeC {\dj }\IeC {\d \ocircumflex } linh \IeC {\dj }\IeC {\d \ocircumflex }ng}{20}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a}{20}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Y\IeC {\'\ecircumflex }u t\IeC {\'\ocircumflex } \IeC {\h a}nh h\IeC {\horn u}\IeC {\h \ohorn }ng}{21}{subsubsection.2.3.2}
+\contentsline {subsection}{\numberline {2.4}\IeC {\DJ }\IeC {\d \ocircumflex } th\IeC {\'\acircumflex }m t\IeC {\horn u}\IeC {\horn o}ng \IeC {\dj }\IeC {\'\ocircumflex }i}{22}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}M\IeC {\^o} h\IeC {\`\i }nh sandpack}{23}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}M\IeC {\^o} h\IeC {\`\i }nh sandpack m\IeC {\d \ocircumflex }t chi\IeC {\`\ecircumflex }u}{23}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}M\IeC {\^o} h\IeC {\`\i }nh sandpack hai chi\IeC {\`\ecircumflex }u}{24}{subsubsection.2.5.2}
+\contentsline {paragraph}{\numberline {2.5.2.1}C\IeC {\'\acircumflex }u tr\IeC {\'u}c}{24}{paragraph.2.5.2.1}
+\contentsline {paragraph}{\numberline {2.5.2.2}\IeC {\DJ }\IeC {\d \ocircumflex } th\IeC {\'\acircumflex }m t\IeC {\h \ocircumflex }ng}{25}{paragraph.2.5.2.2}
+\contentsline {section}{\numberline {3}Case Study}{26}{section.3}
+\contentsline {subsection}{\numberline {3.1}\IeC {\DJ }\IeC {\d \ocircumflex } th\IeC {\'\acircumflex }m t\IeC {\horn u}\IeC {\horn o}ng \IeC {\dj }\IeC {\'\ocircumflex }i d\IeC {\`\acircumflex }u-n\IeC {\horn u}\IeC {\'\ohorn }c}{26}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}M\IeC {\^o} h\IeC {\`\i }nh t\IeC {\'\ocircumflex }i \IeC {\horn u}u}{30}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}T\IeC {\h i} s\IeC {\'\ocircumflex } \IeC {\dj }\IeC {\d \ocircumflex } linh \IeC {\dj }\IeC {\d \ocircumflex }ng}{34}{subsection.3.3}
+\contentsline {section}{K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n v\IeC {\`a} ki\IeC {\'\ecircumflex }n ngh\IeC {\d i}}{37}{figure.caption.41}
+\contentsline {section}{T\IeC {\`a}i li\IeC {\d \ecircumflex }u tham kh\IeC {\h a}o}{38}{figure.caption.41}
+\contentsline {section}{Ph\IeC {\d u} L\IeC {\d u}c A}{40}{section*.42}
+\contentsline {section}{Ph\IeC {\d u} L\IeC {\d u}c B}{43}{table.caption.47}
+\contentsline {section}{Ph\IeC {\d u} L\IeC {\d u}c C}{45}{table.caption.47}
