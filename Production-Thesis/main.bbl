@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{jansen2004modelling}
+J.~Jansen and P.~Currie, ``Modelling and optimisation of oil and gas production
+  systems,'' {\em Petroleum Engineering Department of Geo technology in the
+  Netherlands (jd jansen@ citg. tudelft. nl)}, 2004.
+
+\bibitem{haole2003applyreservoir}
+H.~T.~S. Lê Phước~Hảo, {\em Công nghệ mỏ ứng dụng}.
+\newblock Đại học Quốc gia TP Hồ Chí Minh, 2003.
+
+\bibitem{dale1991production}
+B.~H. Dale, ``Production optimization using nodal analysis,'' {\em Oil and Gas
+  Consultants international publications, Tulsa}, 1991.
+
+\bibitem{ahmed2006reservoir}
+T.~Ahmed, {\em Reservoir engineering handbook}.
+\newblock Elsevier, 2006.
+
+\bibitem{standing1951volumetric}
+M.~B. Standing, {\em Volumetric and phase behavior of oil field hydrocarbon
+  systems: PVT for engineers}.
+\newblock California Research Corp., 1951.
+
+\bibitem{brill1999multiphase}
+J.~P. Brill and H.~K. Mukherjee, {\em Multiphase flow in wells}, vol.~17.
+\newblock Society of Petroleum Engineers, 1999.
+
+\bibitem{schlum2010pipesim}
+Schlumberger, {\em PIPESIM Fundamentals}.
+\newblock Schlumberger Information Solutions, 2010.
+
+\end{thebibliography}
