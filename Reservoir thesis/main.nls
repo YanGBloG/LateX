@@ -1,0 +1,32 @@
+\begin{thenomenclature} 
+
+ \nomgroup{A}
+
+  \item [{$P_{node}$}]\begingroup Áp suất tại nút\nomeqref {1.0}
+		\nompageref{5}
+  \item [{$p_{wf}$}]\begingroup Áp suất đáy giếng\nomeqref {1.2}
+		\nompageref{6}
+  \item [{$S, S'$}]\begingroup Hệ số nhiễm bẩn thành hệ\nomeqref {2.18}
+		\nompageref{19}
+  \item [{$Z$}]\begingroup Hệ số lệch khí\nomeqref {2.18}
+		\nompageref{20}
+  \item [{AOF}]\begingroup Dòng mở tuyệt đối\nomeqref {2.18}
+		\nompageref{15}
+  \item [{D}]\begingroup Hệ số độ rối\nomeqref {2.21}
+		\nompageref{21}
+  \item [{ESP}]\begingroup Bơm điện ly tâm chìm\nomeqref {4.2}
+		\nompageref{43}
+  \item [{GLR}]\begingroup Tỉ lệ khí lỏng\nomeqref {4.2}
+		\nompageref{42}
+  \item [{GOR}]\begingroup Tỉ số khí dầu\nomeqref {5.0}
+		\nompageref{50}
+  \item [{IPR}]\begingroup Đường đặc tính dòng vào\nomeqref {1.0}
+		\nompageref{5}
+  \item [{PI}]\begingroup Chỉ số khai thác\nomeqref {5.0}
+		\nompageref{59}
+  \item [{THP}]\begingroup Áp suất đầu tubing\nomeqref {4.1}
+		\nompageref{41}
+  \item [{VLP}]\begingroup Đường đặc tính dòng lên\nomeqref {1.0}
+		\nompageref{5}
+
+\end{thenomenclature}
