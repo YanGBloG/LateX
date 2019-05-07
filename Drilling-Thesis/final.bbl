@@ -1,0 +1,77 @@
+\begin{thebibliography}{10}
+
+\bibitem{bourgoyne1991applied}
+A.~T. Bourgoyne, K.~K. Millheim, M.~E. Chenevert, and F.~S. Young, {\em Applied
+  drilling engineering}, vol.~2.
+\newblock Society of Petroleum Engineers Richardson, TX, 1991.
+
+\bibitem{aadnoy2011fundamentals}
+B.~S. Aadnoy {\em et~al.}, {\em Fundamentals of drilling engineering}.
+\newblock Society of Petroleum Engineers,, 2011.
+
+\bibitem{rehm2013underbalanced}
+B.~Rehm, A.~Haghshenas, A.~S. Paknejad, A.~Al-Yami, and J.~Hughes, {\em
+  Underbalanced drilling: limits and extremes}.
+\newblock Elsevier, 2013.
+
+\bibitem{driscoll1986groundwater}
+F.~G. Driscoll, ``Groundwater and wells,'' {\em St. Paul, Minnesota: Johnson
+  Filtration Systems Inc., 1986, 2nd ed.}, 1986.
+
+\bibitem{culver1998drilling}
+G.~Culver, ``Drilling and well construction,'' tech. rep., Geo-Heat Center,
+  Klamath Falls, OR, 1998.
+
+\bibitem{wu2017research}
+H.~Wu, P.~Chen, X.~Fan, H.~Xia, J.~Wang, J.~Wang, and J.~Wu, ``Research on
+  rapid identification and evaluation technology for gas formation during
+  underbalanced drilling,'' {\em Geofluids}, vol.~2017, 2017.
+
+\bibitem{knight2004hse}
+J.~Knight, R.~Pickles, B.~Smith, M.~Reynolds, {\em et~al.}, ``Hse training,
+  implementation, and production results for a long-term underbalanced
+  coiled-tubing multilateral drilling project,'' in {\em SPE/IADC Underbalanced
+  Technology Conference and Exhibition}, Society of Petroleum Engineers, 2004.
+
+\bibitem{HSE}
+S.~of~Petroleum~Engineers, ``{HSE Management of UBD Operations - the case for
+  the UBD Operations HSE case}.''
+  \url{http://petrowiki.org/Underbalanced_drilling_health_and_safety_issues},
+  2015.
+\newblock [Online; accessed 16-July-2015].
+
+\bibitem{guo2002gas}
+B.~Guo and A.~Ghalambor, {\em Gas volume requirements for underbalanced
+  drilling: deviated holes}.
+\newblock PennWell Books, 2002.
+
+\bibitem{rehm2013managed}
+B.~Rehm, J.~Schubert, A.~Haghshenas, A.~S. Paknejad, and J.~Hughes, {\em
+  Managed pressure drilling}.
+\newblock Elsevier, 2013.
+
+\bibitem{engevik2007risk}
+M.~O. Engevik, {\em Risk Assessment of Underbalanced and Managed Pressure
+  Drilling Operations}.
+\newblock PhD thesis, MSc. Thesis. Norway: NTNU, 2007.
+
+\bibitem{pedersen2015supervisory}
+T.~Pedersen, J.-M. Godhavn, and J.~Schubert, ``Supervisory control for
+  underbalanced drilling operations,'' {\em IFAC-PapersOnLine}, vol.~48, no.~6,
+  pp.~120--127, 2015.
+
+\bibitem{mclellan1999borehole}
+P.~McLellan, C.~Hawkes, {\em et~al.}, ``Borehole stability analysis for
+  underbalanced drilling,'' in {\em Annual Technical Meeting}, Petroleum
+  Society of Canada, 1999.
+
+\bibitem{ramalho2007changing}
+J.~Ramalho {\em et~al.}, ``Changing the look and feel of underbalanced
+  drilling,'' in {\em IADC/SPE Managed Pressure Drilling \& Underbalanced
+  Operations}, Society of Petroleum Engineers, 2007.
+
+\bibitem{nikoofard2016control}
+A.~Nikoofard, ``Control and adaptive observer designs for managed pressure and
+  under balanced drilling,'' 2016.
+
+\end{thebibliography}
