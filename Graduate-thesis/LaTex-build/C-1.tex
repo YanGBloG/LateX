@@ -114,7 +114,14 @@ Khai thác nhân tạo được thực hiện khi dòng chảy trong giếng b�
 \subsubsection{Ứng dụng}
 Được đưa vào ứng dụng trong thực tiễn từ năm 1920 tại mỏ Oklahoma, ESP có thể nâng lưu lượng khai thác thêm tới 1000 thùng trên ngày, gấp khoảng 2 đến 3 lần bơm cần (rod pump).
 
-Ngày nay, bơm điện li tâm chìm thường được ứng dụng trong bơm ép nước (trên bờ), khai thác trên biển hoặc trong những trường hợp có sẵn nguồn điện và khai thác với lưu lượng lớn. ESP có thể được lắp đặt ở độ sâu 1,000 ft đến 10,000 ft đồng thời tăng lưu lượng khai thác thêm từ 200 bbl/d đến 20,000 bbl/d. Kỉ lục độ sâu và lưu lượng có thể sử dụng ESP là 15,000 ft và 30,000 bbl/d.
+Ngày nay, bơm điện li tâm chìm thường được ứng dụng trong bơm ép nước (trên bờ), khai thác trên biển hoặc trong những trường hợp có sẵn nguồn điện và khai thác với lưu lượng lớn. ESP có thể được lắp đặt ở độ sâu 1,000 ft đến 10,000 ft đồng thời tăng lưu lượng khai thác thêm từ 200 bbl/d đến 20,000 bbl/d (Hình \ref{fig:rate-vs-depth}). Kỉ lục độ sâu và lưu lượng có thể sử dụng ESP là 15,000 ft và 30,000 bbl/d.\\
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.6]{fig/rate-vs-depth.png}
+		\caption{Lưu lượng khai thác tối đa theo độ sâu}
+		\label{fig:rate-vs-depth}
+	\end{figure}
 
 \subsubsection{Ưu điểm và hạn chế}
 
@@ -127,11 +134,50 @@ Một vài ưu điểm của bơm điện li tâm chìm có thể kể đến nh
 		\item Thích hợp với hoạt động khai thác trên biển,
 		\item Dễ dàng sử lý ăn mòn và lắng đọng.
 	\end{itemize}
-ESP cũng có một vài hạn chế như:
+ESP cũng có một vài hạn chế:
 	\begin{itemize}
 		\item Phụ thuộc vào nguồn cung cấp năng lượng,
 		\item Cần được vận hành trong điều kiện ổn định,
+		\item Dễ bị ảnh hưởng bởi cát hay các vật chất gây ăn mòn,
+		\item Quá trình sửa chửa khó khăn,
+		\item Bị hạn chế trong vùng có nhiệt độ cao,
+		\item Hiệu suất thấp đối với dầu có độ nhớt cao,
+		\item Chi phí lắp đặt cao.\\
 	\end{itemize}
+
+\subsection{Gas lift}
+Gas lift là phương pháp bơm ép khí vào cột lưu chất trong giếng để lưu chất có thể dễ dàng được khai thác hơn. Hầu hết khí được sử dụng trong bơm ép là khí tự nhiên có đặc tính trơ, được bơm ép vào trong tubing tại những vị trí đã được thiết kế trước, dựa trên ba nguyên lý chủ yếu: giảm tỉ trọng hỗn hợp lưu chất, năng lượng giản nở của khí và thay thế vị trí. Từ đó dòng lưu chất tại đáy giếng có thể tiếp tục được đưa lên bề mặt và giếng bắt đầu được khai thác trở lại hoặc nâng cao năng suất khai thác. Có thể chia gas lift thành hai loại là gas lift định kì và gas lift liên tục.
+
+Đối với gas lift liên tục, dòng khí được bơm liên tục có kiểm soát vào trong tubing trong khi gas lift định kì sẽ thực hiện bơm khí theo chu kì nhất định khi lưu chất trong tubing có xu hướng tích tụ về đáy giếng. Sơ đồ một giếng khai thác sử dụng gas lift được thể hiện như sau:
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.7]{fig/continuous-gas-lift.png}
+		\caption{Sơ đồ giếng khai thác với gas lift}
+		\label{fig:continuous-gas-lift}
+	\end{figure}
+
+Trong đó, đối với gas lift liên tục van thấp nhất sẽ được mở liên tục để thực hiện bơm ép khí, các van còn lại được vận hành tùy vào mục đích của người vận hành. Đối với gas lift định kì, các van sẽ được mở tùy theo thời gian bơm ép định kì đã lên theo kế hoạch và đóng trong những khoảng thời gian khác. Thông thường trong thời gian bơm ép van số 5 (theo sơ đồ Hình \ref{fig:continuous-gas-lift}) sẽ được mở trước tiên, các van khác được vận hành tùy theo mục đích.
+
+Lưu lượng khí bơm ép cho mỗi giếng được phân chia tùy thuộc vào đặc tính của giếng đó. Trong phạm vi của luận án, tác giả sẽ đi vào xây dựng mô hình phân phối lưu lượng khí cho từng giếng theo cụm giếng chung hệ thống ống góp (manifold). Mô hình sẽ không phân biệt phương pháp gas lift liên tục hay định kì, chỉ đưa ra lưu lượng khí bơm ép cho mỗi giếng dưới điều kiện tổng lượng khí bơm ép xác định để đạt được lưu lượng dầu tối đa trong điều kiện bình tách có thể chịu được.\\
+
+\subsubsection{Ứng dụng}
+Lần đầu tiên gas lift được đưa vào trong khai thác năm 1846 tại Mĩ, tuy nhiên để sử dụng khai thác nước là chủ yếu. Đến năm 1930 gas lift mới thực sự được đưa vào ứng dụng trong ngành công nghiệp dầu khí cùng với sự ra đời của các mẫu van gas lift khác nhau. Vào những năm này gas lift được sử dụng do hai nguyên chính:
+	\begin{itemize}
+		\item Tăng mạnh lưu lượng khai thác trong khi năng lượng vỉa bắt đầu suy kiệt,
+		\item Đem lại nhiều lợi ích kinh tế khi lượng khí bơm ép sau sử dụng có thể được tách và sử dụng lại, ít bị thất thoát trong quá trình sử dụng.
+	\end{itemize}
+Trong ngành công nghiệp dầu khí hiện đại, gas lift có những ứng dụng chính như sau:
+	\begin{itemize}
+		\item Đưa giếng trở lại khai thác sau khi đã kết thúc giai đoạn khai thác tự nhiên,
+		\item Tăng lưu lượng khai thác,
+		\item Loại bỏ thành phần lỏng trong các giếng khai thác khí,
+		\item Xử lý những giếng lắng đọng cát trong giai đoạn bắn mở vỉa,
+		\item Khai thác nước cho quá trình bơm ép nước.\\
+	\end{itemize}
+
+\subsubsection{Ưu điểm và hạn chế}
+
 
 \section{Đường cong đặc tính gas lift}
 
