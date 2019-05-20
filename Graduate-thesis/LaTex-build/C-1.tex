@@ -22,6 +22,7 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{anyfontsize}
+\usepackage{multicol}
 \usepackage[fontsize=13pt]{scrextend}
 \newcommand{\code}[1]{\texttt{#1}}
 \renewcommand{\baselinestretch}{1.5}
@@ -146,9 +147,20 @@ ESP cũng có một vài hạn chế:
 	\end{itemize}
 
 \subsection{Gas lift}
-Gas lift là phương pháp bơm ép khí vào cột lưu chất trong giếng để lưu chất có thể dễ dàng được khai thác hơn. Hầu hết khí được sử dụng trong bơm ép là khí tự nhiên có đặc tính trơ, được bơm ép vào trong tubing tại những vị trí đã được thiết kế trước, dựa trên ba nguyên lý chủ yếu: giảm tỉ trọng hỗn hợp lưu chất, năng lượng giản nở của khí và thay thế vị trí. Từ đó dòng lưu chất tại đáy giếng có thể tiếp tục được đưa lên bề mặt và giếng bắt đầu được khai thác trở lại hoặc nâng cao năng suất khai thác. Có thể chia gas lift thành hai loại là gas lift định kì và gas lift liên tục.
+Gas lift là phương pháp bơm ép khí vào cột lưu chất trong giếng để lưu chất có thể dễ dàng được khai thác hơn. Hệ thống bề mặt cơ bản cho phương pháp gas lift được thể hiện như trong Hình \ref{fig:gas-lift-system}. Hầu hết khí được sử dụng trong bơm ép là khí tự nhiên có đặc tính trơ, được bơm ép vào trong tubing tại những vị trí đã được thiết kế trước, dựa trên ba nguyên lý chủ yếu: giảm tỉ trọng hỗn hợp lưu chất, năng lượng giản nở của khí và thay thế vị trí. Từ đó dòng lưu chất tại đáy giếng có thể tiếp tục được đưa lên bề mặt và giếng bắt đầu được khai thác trở lại hoặc nâng cao năng suất khai thác. Có thể chia gas lift thành hai loại là gas lift định kì và gas lift liên tục.
 
-Đối với gas lift liên tục, dòng khí được bơm liên tục có kiểm soát vào trong tubing trong khi gas lift định kì sẽ thực hiện bơm khí theo chu kì nhất định khi lưu chất trong tubing có xu hướng tích tụ về đáy giếng. Sơ đồ một giếng khai thác sử dụng gas lift được thể hiện như sau:
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=.6]{fig/gas-lift-system.png}
+		\caption{Hệ thống bơm ép gas lift (bề mặt)}
+		\label{fig:gas-lift-system}
+	\end{figure}
+
+Đối với gas lift liên tục, dòng khí được bơm liên tục có kiểm soát vào trong tubing trong khi gas lift định kì sẽ thực hiện bơm khí theo chu kì nhất định khi lưu chất trong tubing có xu hướng tích tụ về đáy giếng. Sơ đồ lắp đặt một giếng khai thác sử dụng gas lift như Hình \ref{fig:continuous-gas-lift}.
+
+Trong đó, đối với gas lift liên tục van thấp nhất sẽ được mở liên tục để thực hiện bơm ép khí, các van còn lại được vận hành tùy vào mục đích của người vận hành. Đối với gas lift định kì, các van sẽ được mở tùy theo thời gian bơm ép định kì đã lên theo kế hoạch và đóng trong những khoảng thời gian khác. Thông thường trong thời gian bơm ép van số 5 (theo sơ đồ Hình \ref{fig:continuous-gas-lift}) sẽ được mở trước tiên, các van khác được vận hành tùy theo mục đích.
+
+Lưu lượng khí bơm ép cho mỗi giếng được phân chia tùy thuộc vào đặc tính của giếng đó. Trong phạm vi của luận án, tác giả sẽ đi vào xây dựng mô hình phân phối lưu lượng khí cho từng giếng theo cụm giếng chung hệ thống ống góp (manifold). Mô hình sẽ không phân biệt phương pháp gas lift liên tục hay định kì, chỉ đưa ra lưu lượng khí bơm ép cho mỗi giếng dưới điều kiện tổng lượng khí bơm ép xác định để đạt được lưu lượng dầu tối đa trong điều kiện bình tách có thể chịu được.
 
 	\begin{figure}[h]
 		\centering
@@ -156,10 +168,6 @@ Gas lift là phương pháp bơm ép khí vào cột lưu chất trong giếng �
 		\caption{Sơ đồ giếng khai thác với gas lift}
 		\label{fig:continuous-gas-lift}
 	\end{figure}
-
-Trong đó, đối với gas lift liên tục van thấp nhất sẽ được mở liên tục để thực hiện bơm ép khí, các van còn lại được vận hành tùy vào mục đích của người vận hành. Đối với gas lift định kì, các van sẽ được mở tùy theo thời gian bơm ép định kì đã lên theo kế hoạch và đóng trong những khoảng thời gian khác. Thông thường trong thời gian bơm ép van số 5 (theo sơ đồ Hình \ref{fig:continuous-gas-lift}) sẽ được mở trước tiên, các van khác được vận hành tùy theo mục đích.
-
-Lưu lượng khí bơm ép cho mỗi giếng được phân chia tùy thuộc vào đặc tính của giếng đó. Trong phạm vi của luận án, tác giả sẽ đi vào xây dựng mô hình phân phối lưu lượng khí cho từng giếng theo cụm giếng chung hệ thống ống góp (manifold). Mô hình sẽ không phân biệt phương pháp gas lift liên tục hay định kì, chỉ đưa ra lưu lượng khí bơm ép cho mỗi giếng dưới điều kiện tổng lượng khí bơm ép xác định để đạt được lưu lượng dầu tối đa trong điều kiện bình tách có thể chịu được.\\
 
 \subsubsection{Ứng dụng}
 Lần đầu tiên gas lift được đưa vào trong khai thác năm 1846 tại Mĩ, tuy nhiên để sử dụng khai thác nước là chủ yếu. Đến năm 1930 gas lift mới thực sự được đưa vào ứng dụng trong ngành công nghiệp dầu khí cùng với sự ra đời của các mẫu van gas lift khác nhau. Vào những năm này gas lift được sử dụng do hai nguyên chính:
@@ -177,9 +185,190 @@ Trong ngành công nghiệp dầu khí hiện đại, gas lift có những ứng
 	\end{itemize}
 
 \subsubsection{Ưu điểm và hạn chế}
+Gas lift được xem là một trong những phương pháp phổ biến nhất trong các phương pháp khai thác nhân tạo, phù hợp cho những giếng có độ sâu lớn mà những phương pháp khác không thể thực hiện được. Một số ưu điểm chính có thể kể đến như sau:
 
+Gas lift liên tục:
+	\begin{itemize}
+		\item Tận dụng tối đa lợi ích do nguồn khí đem lại,
+		\item Khai thác lưu lượng lớn,
+		\item Thiết bị phổ biến,
+		\item Sử dụng được cho giếng có nhiều cát,
+		\item Có thể thu hồi van bằng tubing hay dây cáp.
+	\end{itemize}
+Gas lift định kì:
+	\begin{itemize}
+		\item Sử dụng được ở điều kiện áp suất dòng vào thấp hơn so với gas lift liên tục,
+		\item Thiết bị phổ biến,
+		\item Có thể thu hồi van bằng tubing hay dây cáp.
+	\end{itemize}
+
+Đồng thời gas lift cũng mang một vài hạn chế như:
+
+Gas lift liên tục:
+	\begin{itemize}
+		\item Cần nguồn cung cấp khí ổn định,
+		\item Không thể triển khai đối với giếng có áp suất quá thấp hoặc có thể nhưng lưu lượng khai thác không khả quan.
+	\end{itemize}
+Gas lift định kì:
+	\begin{itemize}
+		\item Không thể cho dòng khai thác lưu lượng lớn,
+		\item Có thể gây ra hiệu ứng vọt xung trên bề mặt (surge),
+		\item Cần nguồn cung cấp khí ổn định.
+	\end{itemize}
+Ngoài ra, chi phí ban đầu để triển khai thực hiện gas lift khá cao, quá trình bảo trì và vận hành không dễ dàng.\\
+
+\subsection{Một số phương pháp khác}
+Một số phương pháp khai thác nhân tạo khác có thể kể đến như bơm cần, bơm thủy lực hay bơm trục vít. Tuy nhiên, hiện tại các phương pháp không còn được sử dụng phổ biến như hai phương pháp bơm điện li tâm chìm và gas lift. Ưu, nhược điểm của các phương pháp này có thể được kể đến như sau:
+
+Bơm cần (sucker-rod pump)
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+ \multicolumn{1}{c}{Ưu điểm} & \multicolumn{1}{c}{Hạn chế} \\
+ \textbullet\ \hspace{0.5cm} Hiệu suất khá cao & \textbullet\ \hspace{0.5cm} Lưu lượng khai thác hạn chế \\
+ \textbullet\ \hspace{0.5cm} Chi phí thấp &  \\
+ \textbullet\ \hspace{0.5cm} Giảm thiểu ăn mòn &  \\
+ \textbullet\ \hspace{0.5cm} Linh hoạt &  \\
+ \textbullet\ \hspace{0.5cm} Dễ dàng triển khai cứu hộ và bảo trì & \\
+\end{tabularx}
+\end{table}
+
+\newpage
+
+Bơm trục vít (progressive cavity pump)
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+ \multicolumn{1}{c}{Ưu điểm} & \multicolumn{1}{c}{Hạn chế} \\
+ \textbullet\ \hspace{0.5cm} Hiệu suất khá cao & \textbullet\ \hspace{0.5cm} Bị giới hạn bởi độ sâu giếng \\
+ \textbullet\ \hspace{0.5cm} Chi phí đầu tư và bảo trì thấp &  \\
+ \textbullet\ \hspace{0.5cm} Ít tiêu tốn năng lượng &  \\
+ \textbullet\ \hspace{0.5cm} Có khả năng bơm dầu nặng &  \\
+ \textbullet\ \hspace{0.5cm} Dễ dàng triển khai lắp đặt & \\
+\end{tabularx}
+\end{table}
+
+Bơm thủy lực (subsurface hydraulic pump)
+
+\begin{table}[h]
+\centering
+\begin{tabularx}{\textwidth}{@{}XX@{}}
+ \multicolumn{1}{c}{Ưu điểm} & \multicolumn{1}{c}{Hạn chế} \\
+ \textbullet\ \hspace{0.5cm} Linh hoạt trong khai thác đa tầng & \textbullet\ \hspace{0.5cm} Chi phí đầu tư ban đầu cao \\
+ \textbullet\ \hspace{0.5cm} Có thể cho lưu lượng khai thác lớn & \textbullet\ \hspace{0.5cm} Vận hành phức tạp \\
+ \textbullet\ \hspace{0.5cm} Tần suất bảo trì thấp & \textbullet\ \hspace{0.5cm} Hiệu quả kinh tế cao chỉ khi khai thác đa tầng, đa giếng \\
+ \textbullet\ \hspace{0.5cm} Độ sâu khai thác lớn (bơm piston) & \textbullet\ \hspace{0.5cm} Quá trình bảo trì khó khăn \\
+\end{tabularx}
+\end{table}
 
 \section{Đường cong đặc tính gas lift}
+Mục tiếp chính khi sử dụng phương pháp gas lift chính là thu được lưu lượng dầu tối đa với lưu lượng gas lift tối ưu nhất. Mối quan hệ giữa hai đại lượng này được thể hiện thông qua đường cong đặc tính gas lift hay Gas Lift Performance Curve (GLPC)\nomenclature{GLPC}{Gas Lift Performance Curve}. Lưu lượng khí bơm ép tối ưu rất quan trọng, bơm dư hoặc thiếu khí đều làm giảm lưu lượng khai thác đồng thời tăng chi phí bơm ép. Mô hình phân phối lưu lượng khí sẽ được xây dựng dựa trên các tính chất của GLPC cho một giếng khai thác. Dòng chảy trong vỉa được giải sử chỉ bao gồm một pha lỏng, trong tubing sẽ là hai pha lỏng - khí, các điều kiện vật lý để tồn tại GLPC là duy nhất.\\
+
+\subsection{Đường cong đặc tính và bài toán tối ưu}\label{glpc-opt-problem}
+Đối với một giếng khai thác bắt đầu thực hiện gas lift, sản phẩm khai thác sẽ bao gồm các lưu chất vỉa (dầu, nước) và khí được bơm ép vào trong tubing. Khi đó lưu lượng khai thác có thể được biểu diễn bằng một hàm phụ thuộc vào lưu lượng khí bơm ép:
+	\begin{equation}\label{eqn:GLPC}
+		q_l = \varphi(q_g)
+	\end{equation}
+Với:\\
+\hspace*{1cm}$q_g$ là lưu lượng khí bơm ép\nomenclature{$q_g$}{Lưu lượng khí bơm ép (MSCF/d)}\\
+\hspace*{1cm}$q_l$ là lưu lượng khai thác.\nomenclature{$q_l$}{Lưu lượng khai thác (lỏng) (STB/d)}
+
+Nếu hàm số $\varphi(q_g)$ tồn tại, đồ thị biểu diễn đường cong hàm số \ref{eqn:GLPC} chính là đường đặc tính gas lift (Hình \ref{fig:glpc}). Để \ref{eqn:GLPC} tồn tại $q_g$ phải thỏa mãn điều kiện $0 \leq q_g \leq Q_{gav}$\nomenclature{$Q_{gav}$}{Tổng lượng khí có sẵn} với $Q_{gav}$ là tổng lượng khí có sẵn.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=.6]{fig/glpc.png}
+		\caption{Đường đặc tính gas lift}
+		\label{fig:glpc}
+	\end{figure}
+
+Sử dụng các đặc tính khai thác của mỗi giếng lưu lượng dầu được tính thông qua phương trình:
+	\begin{equation}\label{eqn:qo-vs-ql}
+		q_o = (1 - WC) \times q_l
+	\end{equation}
+Với:\\
+\hspace*{1cm}WC là hàm lượng nước trong lưu chất khai thác\nomenclature{WC}{Hàm lượng nước}\\
+\hspace*{1cm}$q_o$ là lưu lượng dầu.\nomenclature{$q_o$}{Lưu lượng dầu (STB/d)}
+
+Từ các phương trình \ref{eqn:GLPC} và \ref{eqn:qo-vs-ql} được:
+	\begin{equation}\label{eqn:qo-vs-qg}
+		q_o = (1 - WC) \times \varphi(q_g)
+	\end{equation}
+Quá trình tối đa hóa lưu lượng dầu sẽ xoay quanh việc tìm giá trị lớn nhất của phương trình \ref{eqn:qo-vs-qg}:
+	\begin{equation}\label{eqn:max-qo}
+		Max\sum_{k=1}^Nq_o = Max\sum_{k=1}^N(1 - WC) \times \varphi(q_g)
+	\end{equation}
+Với N là tổng số giếng trong cụm giếng và k là giếng khai thác.\\
+
+\subsection{Mô hình hình toán học}
+Để có thể thực hiện xây dụng mô hình phân phối tối ưu cần đưa bài toán tối ưu như đã nêu ở mục \ref{glpc-opt-problem} trở về dưới dạng tối ưu bằng mô hình toán học. Bắt đầu với phương trình biểu diễn chỉ số năng suất khai thác được suy ra từ định luật Darcy:
+	\begin{equation}\label{eqn:darcy-productivity-index}
+		J = \dfrac{q_l}{P_r - P_{wf}}
+	\end{equation}
+Với:\\
+\hspace*{1cm}J là chỉ số năng suất\nomenclature{J}{Chỉ số năng suất (STB/d/psi)}\\
+\hspace*{1cm}$P_r$ là áp suất vỉa\nomenclature{$P_r$}{Áp suất vỉa}\\
+\hspace*{1cm}$P_{wf}$ là áp suất dòng vào tại đáy giếng.\nomenclature{$P_{wf}$}{Áp suất dòng vào tại đáy giếng}
+
+Bằng cách giả sử lưu chất vỉa chỉ tồn tại một pha lỏng (dầu và nước), ta có được:
+	\begin{equation}\label{eqn:qo-ql-wc}
+		q_l = (1 + WOR) \times q_o = \dfrac{q_o}{1 - WC}
+	\end{equation}
+Với WOR\nomenclature{WOR}{Tỉ số nước dầu} là tỉ số nước - dầu.
+
+Phương trình dòng chảy cho lưu chất hai pha trong tubing được biểu diển từ \textit{phương trình cân bằng năng lượng}:
+	\begin{equation}\label{eqn:energy-balance-equation}
+		\dfrac{dP}{dz} = \dfrac{g}{g_c}\overline{\rho}sin(\theta) + \dfrac{f\overline{\rho}u_m^2}{2g_cD} + \dfrac{\overline{\rho}}{2g_c}\dfrac{D}{dz}u_m^2
+	\end{equation}
+Với điều kiện ban đầu:
+	\begin{equation}\label{eqn:initial-cons}
+		P(0) = P_{wh}
+	\end{equation}
+Trong đó:\\
+\hspace*{1cm}P: Áp suất mất mát (psi)\nomenclature{P}{Áp suất}\\
+\hspace*{1cm}z: Chiều sâu giếng khoan (ft)\nomenclature{z}{Chiều sâu giếng khoan}\\
+\hspace*{1cm}g: Gia tốc trọng trường $(\text{ft}/\text{s}^2)$\\
+\hspace*{1cm}$g_c$: Hệ số chuyển đổi\\
+\hspace*{1cm}$\overline{\rho}$: Tỉ trọng hỗn hợp\nomenclature{$\overline{\rho}$}{Tỉ trọng hỗn hợp}\\
+\hspace*{1cm}D: Đường kính tubing (in)\nomenclature{D}{Đường kính tubing (in)}\\
+\hspace*{1cm}$f$: Hệ số ma sát\nomenclature{$f$}{Hệ số ma sát}\\
+\hspace*{1cm}$u_m$: Vận tốc hỗn hợp (ft/s).\nomenclature{$u_m$}{Vận tốc hỗn hợp (ft/s)}
+
+Các thành phần $\dfrac{g}{g_c}\overline{\rho}sin(\theta)$, $\dfrac{f\overline{\rho}u_m^2}{2g_cD}$ và $\dfrac{\overline{\rho}}{2g_c}\dfrac{d}{dz}u_m^2$ trong phương trình \ref{eqn:energy-balance-equation} tương ứng là tổn hao áp suất do thế năng, ma sát và động năng. Đối với giếng thẳng đứng $sin(\theta) = 1$ do đó thành phần thế năng trở thành $\dfrac{g}{g_c}\overline{\rho}$, thành phần động năng tương đối nhỏ có thể bỏ qua. $\overline{\rho}$ được miêu tả bằng phương trình:
+	\begin{equation}\label{eqn:mixture-density}
+		\overline{\rho} = H_g\rho_g + (1 - H_g)\rho_l
+	\end{equation}
+Tỉ trọng của khí $\rho_g$ phụ thuộc áp suất P theo công thức:
+	\begin{equation}\label{eqn:gas-density}
+		\rho_g = 28.97\dfrac{\gamma_gP}{ZRT}
+	\end{equation}
+Với:\\
+\hspace*{1cm}Z: Hệ số lệch khí\\
+\hspace*{1cm}R: Hằng số khí phổ\\
+\hspace*{1cm}T: Nhiệt độ trung bình trong tubing.
+
+Tỉ số thể tích khí trong hỗn hợp $H_g$ được tính theo mô hình Zuber-Findlay:
+	\begin{equation}\label{eqn:gas-holdup}
+		H_g = \dfrac{u_{sg}}{C_ou_m + U_d}
+	\end{equation}
+Với:\\
+\hspace*{1cm}$u_{sg}$: Tốc độ trượt của khí\\
+\hspace*{1cm}$C_o$: Hệ số phân tán\\
+\hspace*{1cm}$U_d$: Tốc độ trôi.
+
+Tốc độ của hỗn hợp lưu chất được tính toán từ tốc độ trượt của pha khí và pha lỏng theo các công thức:
+	\begin{equation}\label{eqn:mixture-velocity}
+		u_m = u_{sl} + u_{sg}
+	\end{equation}
+	\begin{equation}\label{eqn:usg-usl}
+		u_{sl} = \dfrac{q_l}{A},\hspace*{1cm} u_{sg} = \dfrac{ZP_{sc}T}{T_{sc}P}\dfrac{q_g}{A},\hspace*{1cm} A = \pi\dfrac{D^2}{4}
+	\end{equation}
+Với:\\
+\hspace*{1cm}$u_{sl}$: Tốc độ trượt của pha lỏng ($\text{ft}/\text{s}^2$)\\
+\hspace*{1cm}$u_{sg}$: Tốc độ trượt của pha khí ($\text{ft}/\text{s}^2$)\\
+\hspace*{1cm}A: Tiết diện của tubing.
 
 \section{Giải thuật di truyền}
 \subsection{Nguyên lý giải thuật}
