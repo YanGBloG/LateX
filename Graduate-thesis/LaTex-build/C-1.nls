@@ -2,7 +2,38 @@
 
  \nomgroup{A}
 
+  \item [{$\overline{\rho}$}]\begingroup Tỉ trọng hỗn hợp\nomeqref {1.8}
+		\nompageref{11}
+  \item [{$f$}]\begingroup Hệ số ma sát\nomeqref {1.8}
+		\nompageref{11}
+  \item [{$P_r$}]\begingroup Áp suất vỉa\nomeqref {1.5}
+		\nompageref{10}
+  \item [{$P_{wf}$}]\begingroup Áp suất dòng vào tại đáy giếng\nomeqref {1.5}
+		\nompageref{10}
+  \item [{$q_g$}]\begingroup Lưu lượng khí bơm ép (MSCF/d)\nomeqref {1.1}
+		\nompageref{9}
+  \item [{$q_l$}]\begingroup Lưu lượng khai thác (lỏng) (STB/d)\nomeqref {1.1}
+		\nompageref{9}
+  \item [{$q_o$}]\begingroup Lưu lượng dầu (STB/d)\nomeqref {1.2}
+		\nompageref{10}
+  \item [{$Q_{gav}$}]\begingroup Tổng lượng khí có sẵn\nomeqref {1.1}
+		\nompageref{9}
+  \item [{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.8}
+		\nompageref{11}
+  \item [{D}]\begingroup Đường kính tubing (in)\nomeqref {1.8}
+		\nompageref{11}
   \item [{ESP}]\begingroup Electrical Submersible Pump\nomeqref {1.0}
 		\nompageref{1}
+  \item [{GLPC}]\begingroup Gas Lift Performance Curve\nomeqref {1.0}
+		\nompageref{8}
+  \item [{J}]\begingroup Chỉ số năng suất (STB/d/psi)\nomeqref {1.5}
+		\nompageref{10}
+  \item [{P}]\begingroup Áp suất\nomeqref {1.8}\nompageref{11}
+  \item [{WC}]\begingroup Hàm lượng nước\nomeqref {1.2}
+		\nompageref{10}
+  \item [{WOR}]\begingroup Tỉ số nước dầu\nomeqref {1.6}
+		\nompageref{10}
+  \item [{z}]\begingroup Chiều sâu giếng khoan\nomeqref {1.8}
+		\nompageref{11}
 
 \end{thenomenclature}
