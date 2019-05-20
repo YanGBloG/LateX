@@ -12,10 +12,13 @@
 \contentsline {subsubsection}{\numberline {1.3.1.2}\IeC {\UHORN }u \IeC {\dj }i\IeC {\h \ecircumflex }m v\IeC {\`a} h\IeC {\d a}n ch\IeC {\'\ecircumflex }}{3}{subsubsection.1.3.1.2}
 \contentsline {subsection}{\numberline {1.3.2}Gas lift}{3}{subsection.1.3.2}
 \contentsline {subsubsection}{\numberline {1.3.2.1}\IeC {\'\UHORN }ng d\IeC {\d u}ng}{5}{subsubsection.1.3.2.1}
-\contentsline {subsubsection}{\numberline {1.3.2.2}\IeC {\UHORN }u \IeC {\dj }i\IeC {\h \ecircumflex }m v\IeC {\`a} h\IeC {\d a}n ch\IeC {\'\ecircumflex }}{5}{subsubsection.1.3.2.2}
-\contentsline {section}{\numberline {1.4}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh gas lift}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Gi\IeC {\h a}i thu\IeC {\d \acircumflex }t di truy\IeC {\`\ecircumflex }n}{5}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Nguy\IeC {\^e}n l\IeC {\'y} gi\IeC {\h a}i thu\IeC {\d \acircumflex }t}{5}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}B\IeC {\`a}i to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{5}{subsection.1.5.2}
-\contentsline {section}{\numberline {1.6}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n}{5}{section.1.6}
+\contentsline {subsubsection}{\numberline {1.3.2.2}\IeC {\UHORN }u \IeC {\dj }i\IeC {\h \ecircumflex }m v\IeC {\`a} h\IeC {\d a}n ch\IeC {\'\ecircumflex }}{6}{subsubsection.1.3.2.2}
+\contentsline {subsection}{\numberline {1.3.3}M\IeC {\d \ocircumflex }t s\IeC {\'\ocircumflex } ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p kh\IeC {\'a}c}{7}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh gas lift}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh v\IeC {\`a} b\IeC {\`a}i to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{9}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\`\i }nh to\IeC {\'a}n h\IeC {\d o}c}{10}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}Gi\IeC {\h a}i thu\IeC {\d \acircumflex }t di truy\IeC {\`\ecircumflex }n}{12}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Nguy\IeC {\^e}n l\IeC {\'y} gi\IeC {\h a}i thu\IeC {\d \acircumflex }t}{12}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}B\IeC {\`a}i to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{12}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n}{12}{section.1.6}
 \contentsfinish 
