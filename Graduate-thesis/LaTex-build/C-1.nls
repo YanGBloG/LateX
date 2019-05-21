@@ -20,10 +20,16 @@
 		\nompageref{9}
   \item [{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.8}
 		\nompageref{11}
+  \item [{AI}]\begingroup Artificial Intelligence\nomeqref {1.13}
+		\nompageref{12}
+  \item [{ANN}]\begingroup mạng thần kinh nhân tạo\nomeqref {1.13}
+		\nompageref{12}
   \item [{D}]\begingroup Đường kính tubing (in)\nomeqref {1.8}
 		\nompageref{11}
   \item [{ESP}]\begingroup Electrical Submersible Pump\nomeqref {1.0}
 		\nompageref{1}
+  \item [{GA}]\begingroup Giải thuật di truyền\nomeqref {1.13}
+		\nompageref{12}
   \item [{GLPC}]\begingroup Gas Lift Performance Curve\nomeqref {1.0}
 		\nompageref{8}
   \item [{J}]\begingroup Chỉ số năng suất (STB/d/psi)\nomeqref {1.5}
