@@ -15,3 +15,6 @@
 \nomenclatureentry{aD@[{D}]\begingroup Đường kính tubing (in)\nomeqref {1.8}|nompageref}{11}
 \nomenclatureentry{a$f$@[{$f$}]\begingroup Hệ số ma sát\nomeqref {1.8}|nompageref}{11}
 \nomenclatureentry{a$u_m$@[{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.8}|nompageref}{11}
+\nomenclatureentry{aAI@[{AI}]\begingroup Artificial Intelligence\nomeqref {1.13}|nompageref}{12}
+\nomenclatureentry{aANN@[{ANN}]\begingroup mạng thần kinh nhân tạo\nomeqref {1.13}|nompageref}{12}
+\nomenclatureentry{aGA@[{GA}]\begingroup Giải thuật di truyền\nomeqref {1.13}|nompageref}{12}
