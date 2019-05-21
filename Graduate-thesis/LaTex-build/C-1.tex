@@ -22,12 +22,19 @@
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{anyfontsize}
-\usepackage{multicol}
+\usepackage{tikz}
 \usepackage[fontsize=13pt]{scrextend}
 \newcommand{\code}[1]{\texttt{#1}}
 \renewcommand{\baselinestretch}{1.5}
 \renewcommand{\nomname}{Danh mục ký hiệu và viết tắt}
 
+\usetikzlibrary{shapes.geometric, arrows}
+
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, text width=3cm, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
 
 \makenomenclature
 \makeatletter
@@ -94,10 +101,6 @@
 \newpage
 
 \chapter{CƠ SỞ LÝ THUYẾT}
-\section{Các đặc tính dự báo}
-
-\section{Phương pháp dự báo bằng mạng neuron nhân tạo}
-
 \section{Các phương pháp khai thác nhân tạo}
 Thông thường, trong giai đoạn đầu của một giếng khai thác dòng lưu chất từ vỉa sẽ khai thác nhờ áp suất vỉa (nếu áp suất vỉa lớn hơn tổng áp suất mất mát của hệ thống khai thác), giai đoạn này được gọi là khai thác tự phun. Nếu như áp suất vỉa không còn đủ lớn để có thể thắng được áp suất mất mát, dòng chảy trong giếng sẽ ``chết'' và giếng không thể tiếp tục khai thác tự phun được nữa. Hai nguyên nhân chính dẫn đến dòng trong giếng bắt đầu ``chết'' chính là:
 	\begin{itemize}
@@ -370,11 +373,106 @@ Với:\\
 \hspace*{1cm}$u_{sg}$: Tốc độ trượt của pha khí ($\text{ft}/\text{s}^2$)\\
 \hspace*{1cm}A: Tiết diện của tubing.
 
-\section{Giải thuật di truyền}
-\subsection{Nguyên lý giải thuật}
+\section{Trí tuệ nhân tạo}
+Trí tuệ nhân tạo hay Artificial Intelligence (AI)\nomenclature{AI}{Artificial Intelligence} là một phương pháp sử dụng sức mạnh của máy tính để giải những bài toán khó trong đó có bài toán tối ưu hóa. Để có thể giải được những bài toán tối ưu hóa hiện đại, những kĩ thuật cổ điển không còn thích hợp; tuy nhiên, khi không gian tối ưu lớn đi kèm các ràng buộc đặc biệt cần phải sử dụng những kĩ thuật thích hợp. \textit{Giải thuật di truyền} và \textit{mạng thần kinh nhân tạo} (hay mạng neural nhân tạo, ANN)\nomenclature{ANN}{mạng thần kinh nhân tạo} là hai trong những kĩ thuật đó.\\
 
-\subsection{Bài toán tối ưu}
+\subsection{Giải thuật di truyền}
+\subsubsection{Nguyên lý giải thuật}
+Giải thuật di truyền (Genetic Algorithms, GA)\nomenclature{GA}{Giải thuật di truyền}; thuật ngữ ``giải thuật'' ở đây chính là các thuật toán để giải quyết một vấn đề; được mô phỏng dựa trên các hiện tượng sinh học tự nhiên: \textit{kế thừa} và \textit{đấu tranh sinh tồn} để thực hiện cải tiến, khảo sát không gian của lời giải. Khái niệm kế thừa và đấu tranh sinh tồn có thể được giải thích như sau:
 
-\section{Thuật toán}
+Giả sử có một quần thể các cá thể loài chồn, bao gồm những cá thể vượt trội có sự linh hoạt, nhạy bén cao, khỏe mạnh và những cá thể yếu ớt không đủ linh hoạt nhạy bén. Những cá thể vượt trội có xác suất sinh tồn trong môi trường tự nhiên cao hơn các cá thể yếu ớt, dĩ nhiên một số cá thể yếu ớt cũng có thể sống được nhờ may mắn đó chính là đấu tranh sinh tồn. Đến một giai đoạn nào đó các cá thể chồn còn lại bắt đầu sinh sản, thế hệ các chú chồn tiếp theo sẽ được kế thừa các đặc tính di truyền của các con bố và mẹ, tất nhiên là có một số con mang đặc tính của những con yếu ớt còn sót lại; điều này chính là kế thừa. Đôi khi sẽ có thêm những cá thể đột biến do mang đặc tính di truyền từ một các thể khác lạc vào quần thể chồn này, cá thể đột biến này có thể tốt hoặc xấu. Do đó, thế hệ sau luôn mang một xác suất cao cho ra những cá thể tốt hơn thế hệ trước. Tất nhiên quần thể những loài thú săn chồn cũng mang đặc tính kế thừa và đấu tranh này.
+
+Quá trình tìm kiếm ngiệm của bài toán tối ưu bằng giải thuật di truyên cũng thực hiện các bước tương tự với quá trình đấu tranh sinh tồn của quần thể chồn. 
+
+Giải thuật di truyền sử dụng một số thuật ngữ được lấy từ di truyền học như: cá thể, quần thể, nhiễm sắc thể, kiểu gen. Một cá thể cũng là một nhiễm sắc thể đươc cấu tạo từ các gen, mỗi gen mang một đặc trưng khác nhau. Trong toán học một nghiệm của phương trình chính là nhiễm sắc thể, một thành phần trong nghiệm chính là một gen, tập hợp của một số các cặp số có thể trở thành nghiệm của phương trình chính là quần thể. Ví dụ tìm cực trị của hàm số hai biến $x$, $y$ sau:
+	\begin{equation}\label{eqn:ex-genetic}
+		f(x, y) = x^2y + y^2x
+	\end{equation}
+Giả sử $A = (x_1, y_1)$ chính là một nghiệm của \ref{eqn:ex-genetic}, như vậy $A$ sẽ là một nhiễm sắc thể; $x_1$, $y_1$ là các gen của nhiễm sắc thể $A$; tập hợp $A_1 \to A_N$ là một quần thể chứa các nhiễm sắc thể có thể là nghiệm của \ref{eqn:ex-genetic} với số lượng cá thể $N$ tùy thuộc vào sự lựa chọn của người giải.\\
+
+\subsubsection{Thuật toán di truyền}
+Một thuật toán di truyền để giải bất kì một bài toán cụ thể nào phải bao gồm năm điểm sau:
+	\begin{itemize}
+		\item Cách biểu diễn di truyền cho lời giải của bài toán,
+		\item Các khởi tạo quần thể ban đầu,
+		\item Một hàm lượng giá đóng vai trò là môi trường, đánh giá các lời giải theo mức độ ``thích nghi'' của chúng,
+		\item Các phép toán di truyền,
+		\item Các tham số khởi tạo (kích thước quần thể, xác suất áp dụng các phép toán di truyền, hoán đổi...).
+	\end{itemize}
+Cụ thể thuật toán di truyền được diễn giải thông qua các phép sau:
+
+\textit{a. Phép chọn}
+
+Phép chọn là quá trình loại bỏ các cá thể xấu trong quần thể chỉ giữ lại những các thể tốt dựa trên độ thích nghi của mỗi cá thể. Độ thích nghi là một hàm gán một giá trị thực cho các cá thể trong quần thể. Phép chọn có thể được mô phỏng như sau:
+	\begin{itemize}
+		\item Đánh giá độ thích nghi của từng cá thể trong quần thể hiện hành,
+		\item Sắp xếp quần thể theo độ thích nghi giảm dần,
+		\item Loại bỏ các cá thể cuối dãy, chỉ giữ lại $n$ cá thể tốt nhất.
+	\end{itemize}
+
+\textit{b. Phép lai}
+
+Phép lai là quá trình hình thành nhiễm sắc thể mới trên cơ sở các nhiễm sắc thể bố-mẹ, bằng cách ghép một hay nhiều đoạn gen của hai (hay nhiều) nhiễm sắc thể bố-mẹ với nhau. Phép lai xảy ra với xác suất $p_c$, có thể mô phỏng như sau:
+	\begin{itemize}
+		\item Chọn ngẫu nhiên hai (hay nhiều) cá thể bất kỳ trong quần thể. Giả sử các nhiễm sắc thể bố-mẹ đều có $m$ gen,
+		\item Tạo ngẫu nhiên một số tự nhiên trong đoạn $[1, m-1]$ (điểm lai). Điểm lai chia các chuỗi bố-mẹ dài $m$ thành hai nhóm chuỗi con dài $m_1$, $m_2$. Hai chuỗi nhiễm sắc thể con mới sẽ là $m_{11} + m_{22}$ và $m_{12} + m_{21}$.
+	\end{itemize}
+
+\textit{c. Phép đột biến}
+
+Đột biến là hiện tượng cá thể con mang một số tính trạng không có trong mã gen di truyền của bố-mẹ. Phép đột biến xảy ra với xác suất $p_m$ nhỏ hơn rất nhiều so với xác suất lai $p_c$. Phép đột biến có thể mô phỏng như sau:
+	\begin{itemize}
+		\item Chọn ngẫu nhiên một cá thể bất kì bố-mẹ trong quần thể,
+		\item Tạo ngẫu nhiên một số tự nhiên $k$ trong đoạn $[1, m]$,
+		\item Thay đổi gen thứ $k$ và trả cá thể này về quần thể để tham gia quá trình tiến hóa tiếp theo.
+	\end{itemize}
+
+\textit{d. Phép tái sinh}
+
+Phép tái sinh là quá trình trong đó các cá thể được sao chép trên cơ sở độ thích nghi của nó. Quá trình này có thể được mô tả như sau:
+	\begin{itemize}
+		\item Tính độ thích nghi của từng cá thể trong quần thể hiện hành, lập bảng cộng dồn các giá trị thích nghi (theo số thứ tự cho từng cá thể). Giả sử quần thể có $n$ cá thể. Gọi độ thích nghi của cá thể thứ $i$ là $F_i$, tổng cộng dồn thứ $i$ là $F_{ti}$, tổng độ thích nghi của toàn quần thể là $F_{m}$,
+		\item Tạo một số ngẫu nhiên $F$ trong đoạn $[0, F_m]$,
+		\item Chọn cá thể thứ $k$ đầu tiên thỏa $F \geq F_{tk}$ đưa vào quần thể của thế hệ mới.
+	\end{itemize}
+
+Sau khi đã thực hiện phép tái sinh, sẽ bắt đầu một vòng lặp mới cho thế hệ mới sinh từ phép chọn cho đến nghiệm hội tụ hoặc chạy hết số vòng lặp được thiết lập. Thuật toán được thể hiện cụ thể theo sơ đồ Hình \ref{fig:genetic-algorithms}. Điều kiện thực hiện ``yes, no'' là nghiệm đã hội tụ hoặc đã chạy hết vòng lặp hay chưa. Tham số đầu vào bao gồm xác suất lai tạo ($p_c$) và đột biến ($p_m$), kích thước quần thể ($N$), thành phần nghiệm của phương trình ($n_{vars}$), hàm lượng giá.
+
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}[node distance=2cm]
+			\node (start) [startstop] {Bắt đầu};
+			\node (param) [io, below of=start] {Tham số đầu vào};
+			\node (init) [process, below of=param] {Khởi tạo quần thể};
+			\node (eval) [decision, below of=init, yshift=-0.5cm] {Đánh giá};
+			\node (selection) [process, below of=eval, yshift=-0.3cm] {Lựa chọn};
+			\node (crossover) [process, below of=selection, yshift=-0.3cm] {Lai tạo};
+			\node (mutation) [process, below of=crossover, yshift=-0.3cm] {Đột biến};
+			\node (recreate) [process, below of=mutation, yshift=-0.3cm] {Tái sinh};
+			\node (new_pop) [process, right of=recreate, xshift=2.5cm] {Quần thể mới};
+			\node (out) [io, below of=recreate] {Kết quả};
+			\node (stop) [startstop, left of=eval, xshift=-2cm] {Dừng};
+
+			\draw [arrow] (start) -- (param);
+			\draw [arrow] (param) -- (init);
+			\draw [arrow] (init) -- (eval);
+			\draw [arrow] (eval) -- node[anchor=south] {yes} (stop);
+			\draw [arrow] (eval) -- node[anchor=east] {no} (selection);
+			\draw [arrow] (selection) -- (crossover);
+			\draw [arrow] (crossover) -- (mutation);
+			\draw [arrow] (mutation) -- (recreate);
+			\draw [arrow] (recreate) -- (new_pop);
+			\draw [arrow] (new_pop) |- (eval);
+			\draw [arrow] (stop) |- (out);
+		\end{tikzpicture}
+		\caption{Thuật toán di truyền}
+		\label{fig:genetic-algorithms}
+	\end{figure}
+
+\clearpage
+
+\subsection{Mạng thần kinh nhân tạo}
+
+\section{Thuật toán tối ưu}
 
 \end{document}
