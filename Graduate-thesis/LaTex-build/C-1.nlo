@@ -1,20 +1,20 @@
 \nomenclatureentry{aESP@[{ESP}]\begingroup Electrical Submersible Pump\nomeqref {1.0}|nompageref}{1}
-\nomenclatureentry{aGLPC@[{GLPC}]\begingroup Gas Lift Performance Curve\nomeqref {1.0}|nompageref}{8}
-\nomenclatureentry{a$q_g$@[{$q_g$}]\begingroup Lưu lượng khí bơm ép (MSCF/d)\nomeqref {1.1}|nompageref}{9}
-\nomenclatureentry{a$q_l$@[{$q_l$}]\begingroup Lưu lượng khai thác (lỏng) (STB/d)\nomeqref {1.1}|nompageref}{9}
-\nomenclatureentry{a$Q_{gav}$@[{$Q_{gav}$}]\begingroup Tổng lượng khí có sẵn\nomeqref {1.1}|nompageref}{9}
-\nomenclatureentry{aWC@[{WC}]\begingroup Hàm lượng nước\nomeqref {1.2}|nompageref}{10}
-\nomenclatureentry{a$q_o$@[{$q_o$}]\begingroup Lưu lượng dầu (STB/d)\nomeqref {1.2}|nompageref}{10}
-\nomenclatureentry{aJ@[{J}]\begingroup Chỉ số năng suất (STB/d/psi)\nomeqref {1.5}|nompageref}{10}
-\nomenclatureentry{a$P_r$@[{$P_r$}]\begingroup Áp suất vỉa\nomeqref {1.5}|nompageref}{10}
-\nomenclatureentry{a$P_{wf}$@[{$P_{wf}$}]\begingroup Áp suất dòng vào tại đáy giếng\nomeqref {1.5}|nompageref}{10}
-\nomenclatureentry{aWOR@[{WOR}]\begingroup Tỉ số nước dầu\nomeqref {1.6}|nompageref}{10}
-\nomenclatureentry{aP@[{P}]\begingroup Áp suất\nomeqref {1.8}|nompageref}{11}
-\nomenclatureentry{az@[{z}]\begingroup Chiều sâu giếng khoan\nomeqref {1.8}|nompageref}{11}
-\nomenclatureentry{a$\overline{\rho}$@[{$\overline{\rho}$}]\begingroup Tỉ trọng hỗn hợp\nomeqref {1.8}|nompageref}{11}
-\nomenclatureentry{aD@[{D}]\begingroup Đường kính tubing (in)\nomeqref {1.8}|nompageref}{11}
-\nomenclatureentry{a$f$@[{$f$}]\begingroup Hệ số ma sát\nomeqref {1.8}|nompageref}{11}
-\nomenclatureentry{a$u_m$@[{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.8}|nompageref}{11}
-\nomenclatureentry{aAI@[{AI}]\begingroup Artificial Intelligence\nomeqref {1.13}|nompageref}{12}
-\nomenclatureentry{aANN@[{ANN}]\begingroup mạng thần kinh nhân tạo\nomeqref {1.13}|nompageref}{12}
-\nomenclatureentry{aGA@[{GA}]\begingroup Giải thuật di truyền\nomeqref {1.13}|nompageref}{12}
+\nomenclatureentry{aAI@[{AI}]\begingroup Artificial Intelligence\nomeqref {1.0}|nompageref}{8}
+\nomenclatureentry{aANN@[{ANN}]\begingroup mạng thần kinh nhân tạo\nomeqref {1.0}|nompageref}{8}
+\nomenclatureentry{aGA@[{GA}]\begingroup Giải thuật di truyền\nomeqref {1.0}|nompageref}{8}
+\nomenclatureentry{aGLPC@[{GLPC}]\begingroup Gas Lift Performance Curve\nomeqref {1.1}|nompageref}{13}
+\nomenclatureentry{a$q_g$@[{$q_g$}]\begingroup Lưu lượng khí bơm ép (MSCF/d)\nomeqref {1.2}|nompageref}{13}
+\nomenclatureentry{a$q_l$@[{$q_l$}]\begingroup Lưu lượng khai thác (lỏng) (STB/d)\nomeqref {1.2}|nompageref}{13}
+\nomenclatureentry{a$Q_{gav}$@[{$Q_{gav}$}]\begingroup Tổng lượng khí có sẵn\nomeqref {1.2}|nompageref}{13}
+\nomenclatureentry{aWC@[{WC}]\begingroup Hàm lượng nước\nomeqref {1.3}|nompageref}{14}
+\nomenclatureentry{a$q_o$@[{$q_o$}]\begingroup Lưu lượng dầu (STB/d)\nomeqref {1.3}|nompageref}{14}
+\nomenclatureentry{aJ@[{J}]\begingroup Chỉ số năng suất (STB/d/psi)\nomeqref {1.6}|nompageref}{15}
+\nomenclatureentry{a$P_r$@[{$P_r$}]\begingroup Áp suất vỉa\nomeqref {1.6}|nompageref}{15}
+\nomenclatureentry{a$P_{wf}$@[{$P_{wf}$}]\begingroup Áp suất dòng vào tại đáy giếng\nomeqref {1.6}|nompageref}{15}
+\nomenclatureentry{aWOR@[{WOR}]\begingroup Tỉ số nước dầu\nomeqref {1.7}|nompageref}{15}
+\nomenclatureentry{aP@[{P}]\begingroup Áp suất\nomeqref {1.9}|nompageref}{15}
+\nomenclatureentry{az@[{z}]\begingroup Chiều sâu giếng khoan\nomeqref {1.9}|nompageref}{15}
+\nomenclatureentry{a$\overline{\rho}$@[{$\overline{\rho}$}]\begingroup Tỉ trọng hỗn hợp\nomeqref {1.9}|nompageref}{15}
+\nomenclatureentry{aD@[{D}]\begingroup Đường kính tubing (in)\nomeqref {1.9}|nompageref}{15}
+\nomenclatureentry{a$f$@[{$f$}]\begingroup Hệ số ma sát\nomeqref {1.9}|nompageref}{15}
+\nomenclatureentry{a$u_m$@[{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.9}|nompageref}{15}
