@@ -73,8 +73,8 @@
 \setcounter{tocdepth}{4}
 \geometry{letterpaper}
 
-% \title{\textbf{ĐỒ ÁN CÔNG NGHỆ MỎ}}
-% \author{Bùi Trọng Nghĩa\\Diệp Công Trứ}
+% \title{\textbf{LUẬN VĂN TỐT NGHIỆP}}
+% \author{Bùi Trọng Nghĩa}
 
 \begin{document}
 \pagenumbering{gobble}
@@ -364,7 +364,103 @@ Sau khi đã thực hiện phép tái sinh, sẽ bắt đầu một vòng lặp 
 
 \clearpage
 
-\subsection{Mạng thần kinh nhân tạo}
+\subsection{Bài toán thời gian và mô hình ARIMA}
+\subsubsection{Bài toán thời gian}
+Bài toán thời gian hay chuỗi thời gian có thể coi là quá trình ghi chép lại sự thay đổi giá trị của một đại lượng nào đó (áp suất, nhiệt độ, ...) trong một khoảng thời gian liên tục hoặc gần như liên tục.
+
+Tùy thuộc vào từng loại vấn đề khác nhau mà chuỗi thời gian sẽ mang tầng số khác nhau, có thể là theo từng năm (bài toán ngân sách), quý (bài toán tiêu dùng), tháng (bài toán giao thông), tuần (bài toán doanh số), ngày (bài toán thời tiết), giờ (bài toán cổ phiếu), phút (bài toán cuộc gọi), giây (bài toán mạng) hoặc những bài toán mang tính chất riêng biệt khác.
+
+Mục đích của bài toán thời gian chính là dự báo các giá trị của chuỗi trong tương lai để có thể đem lại lợi ích tốt nhất cho công việc. Dự báo chuỗi thời gian có thể được chia làm hai loại:
+	\begin{itemize}
+		\item Dự báo chuỗi đơn biến và
+		\item Dự báo chuỗi đa biến.
+	\end{itemize}
+
+\textit{Tính dừng của chuỗi thời gian}
+
+Để giải quyết bài toán thời gian, một giả định được đưa ra chính là chuỗi dữ liệu đó phải có tính ``dừng'', nếu không có giả định này kết quả dự báo sẽ không còn đáng tin cậy. Một chuỗi thời gian được xem là có tính dừng nếu như trung bình, phương sai không đổi theo thời gian và giá trị hiệp phương sai giữa hai đoạn chỉ phụ thuộc vào khoảng cách giữa độ trễ thời gian giữa hai đoạn này chứ không phụ thuộc vào thời điểm thực tế mà hiệp phương sai được tính.
+
+Cụ thể, chuỗi $Y_t$ được gọi là ``dừng'' nếu như đồng thời thỏa mãn ba điều kiện:
+	\begin{equation}
+		\mu = const \hspace*{.5cm}\& \hspace*{.5cm}\sigma^2 = const
+	\end{equation}
+	\begin{equation}
+		Cov(Y_t)_k = E[(Y_t - \mu), (Y_{t+k} - \mu)]
+	\end{equation}
+Trong đó $\mu, \sigma^2, Cov(Y_t)$ lần lượt là trung bình, phương sai và hiệp phương sai của chuỗi $Y_t$. $Cov(Y_t)_k$ là hiệp phương sai tại độ trễ $k$ -- là phương sai giữa các giá trị $Y_t, Y_{t+k}$, tức là hai giá trị của $Y$ ở các đoạn thời gian cách quãng $k$. Nếu $k = 0$, $Cov(Y_t)_0 = \sigma^2$, $k = 1$ $Cov(Y_t)_1$ là hiệp phương sai giữa hai giá trị kế cận nhau của $Y$. Như vậy hiệp phương sai của $Y$ chỉ phụ thuộc vào $k$ chứ không phụ thuộc vào thời gian $t$. Một chuỗi thời gian có tính dừng sẽ không có xu thế, không có chu kỳ, mà chỉ dao động xung quanh giá trị kỳ vọng của nó.
+
+Trong thực tế, phần lớn các dữ liệu chuỗi thời gian đều không dừng, nếu như muốn thực hiện dự báo trên các chuỗi này cần có những phương pháp để khắc phục tính không dừng của chuỗi. Một trong các phương pháp đó là sử dụng toán tử sai phân lùi.
+
+Để có thể dễ hiểu hơn, phương pháp cơ bản được triển khai như sau:
+	\begin{equation}
+		\mathbb{L}(Y_t) = Y_{t-1}
+	\end{equation}
+Với $\mathbb{L}$ chính là một lần thực hiện toán tử lùi; nói cách khác, thực hiện $\mathbb{L}$ trên $Y_t$, có tác dụng dịch chuyển dữ liệu trở lại một đoạn thời gian.
+
+Áp dụng $\mathbb{L}$ hai lần trên $Y_t$ sẽ chuyển dữ liệu trở lại hai đoạn thời gian:
+	\begin{equation}
+		\mathbb{L}(\mathbb{L}(Y_t)) = \mathbb{L}^2(Y_t) = Y_{t-2}
+	\end{equation}
+Toán tử lùi giúp quá trình tính sai phân được dễ dàng hơn. Với sai phân bậc nhất:
+	\begin{equation}
+		\mathbb{D}(Y_t) = Y_t - Y_{t-1}
+	\end{equation}
+Với $\mathbb{D}$ là phép tính sai phân. Kết hợp với toán tử lùi, có thể viết lại như sau:
+	\begin{equation}
+		\mathbb{D}(Y_t) = Y_t - \mathbb{L}(Y_t) = (1 - L)Y_t
+	\end{equation}
+Tương tự, với sai phân bậc hai sẽ có:
+	\begin{equation}
+		\Delta^2Y_t = \Delta Y_t - \Delta Y_{t-1} = 1-2\mathbb{L}+\mathbb{L}^2 Y_t = (1 - \mathbb{L})^2Y_t
+	\end{equation}
+Tổng quát nếu lấy sai phân bậc $d$ sẽ đạt được tính dừng của chuỗi thời gian:
+	\begin{equation}
+		\Delta^dY_t = (1 - \mathbb{L})^dY_t
+	\end{equation}
+
+\subsubsection{Mô hình ARIMA}
+Mô hình ARIMA hay mô hình tự hồi quy trung bình trượt (\underline Auto \underline Regression  \underline Intergrated \underline Moving \underline Average) được Box và Jenkins đưa ra năm 1970 với mục đích xem xét mối quan hệ giữa các quan trắc trong quá khứ với hiện tại nhằm dự báo cho tương lai một biến trình nào đó. Đến nay ARIMA được đưa vào áp dụng khá phổ biến trong nhiều lĩnh vực kinh tế, xã hội, môi trường. Mô hình này không quá phức tạp nhưng có thể áp dụng hữu hiệu với nhiều bài toán thời khác nhau.
+
+Về cơ bản ARIMA cũng tương tự như mô hình tự hồi quy tuyến tính, nhưng về bản chất có sự khác biệt với mô hình tự hồi quy tuyến tính là các hệ số của ARIMA được xác định theo tiêu chuẩn hội tụ, sai số còn lại chính là thành phần ngẫu nhiên. Khi dự báo, thành phần ngẫu nhiên này chính là sai số dự báo của khoảng thời gian trước, khi tạo chuỗi nó là chuỗi ngẫu nhiên sao cho đảm bảo các đặc trưng thống kê không thay đổi theo thời gian. Do vậy, mô hình được thực hiện với chuỗi ổn định ngẫu nhiên (chuỗi dừng).
+
+Giả sử chuỗi thời gian ổn định ngẫu nhiên $Y_t$ (t = 1,2,...,n) thì dạng công thức cơ bản của mô hình ARIMA bao gồm ba thành phần sau:
+	\begin{itemize}
+		\item Thành phần tự hồi quy bậc p (p = 1, 2, ...)
+		\item Thành phần sai phân bậc d (d = 0, 1, 2, ...)
+		\item Thành phần trung bình trượt bậc q (q = 1, 2, ...)
+	\end{itemize}
+Mô hình sẽ được kí hiệu là ARIMA(p, d, q). Dạng tổng quát của ARIMA(p, d, q) được viết như sau:
+	\begin{equation}\label{eqn:5}
+		W_t = \alpha + p_1W_{t-1} + p_2W_{t-2} + ... + p_pW_{t-p} - q_1a_{t-1} - q_2a_{t-2} - ... - q_qa_{t-q} + a_t
+	\end{equation}
+	\begin{equation}
+	\begin{split}
+		W_t &= \Delta^dy_t\\
+		d = 0 &\Rightarrow W_t = y_t\\
+		d = 1 &\Rightarrow \Delta{} y_t = y_t - y_{t-1}
+	\end{split}
+	\end{equation}
+Trong đó:\\
+\hspace*{1cm}$d$ là bậc của sai phân\\
+\hspace*{1cm}$\alpha$ là hằng số\\
+\hspace*{1cm}$y_t, y_{t-1}, y_{t-2}, ..., y_{t-p}$ là các giá trị quan trắc ở các bươc thời gian t, t - 1, t - 2, ..., t - p\\
+\hspace*{1cm}$a_t, a_{t-1}, a_{t-2}, ..., a_{t-p}$ là các sai số ngẫu nhiên\\
+\hspace*{1cm}$p_1, p_2, ...,p_p; q_1, q_2, ...,q_q$ là các tham số hồi quy.
+
+Phương trình \ref{eqn:5} cũng có thể được viết lại nhờ thực hiện toán tử lùi như đã nêu ở mục trước.
+	\begin{equation}
+		W_t = \alpha + \dfrac{q(\mathbb{L})}{p(\mathbb{L})}a_t
+	\end{equation}
+Hoặc
+	\begin{equation}
+		p(\mathbb{L})(1 - \mathbb{L})^d y_t = \alpha + q(\mathbb{L}) a_t
+	\end{equation}
+Trong đó:\\
+\hspace*{1cm}$\mathbb{L}$ là toán từ lùi\\
+\hspace*{1cm}$p(\mathbb{L}) = (1 - p_1\mathbb{L} - p_2\mathbb{L}^2 - ... - p_p\mathbb{L}^p)$ là phép toán tự hồi quy\\
+\hspace*{1cm}$q(\mathbb{L}) = (1 - q_1\mathbb{L} - q_2\mathbb{L}^2 - ... - q_q\mathbb{L}^q)$ là phép toán trung bình trượt.
+
+
 
 \section{Đường cong đặc tính gas lift}
 Mục tiếp chính khi sử dụng phương pháp gas lift chính là thu được lưu lượng dầu tối đa với lưu lượng gas lift tối ưu nhất. Mối quan hệ giữa hai đại lượng này được thể hiện thông qua đường cong đặc tính gas lift hay Gas Lift Performance Curve (GLPC)\nomenclature{GLPC}{Gas Lift Performance Curve}. Lưu lượng khí bơm ép tối ưu rất quan trọng, bơm dư hoặc thiếu khí đều làm giảm lưu lượng khai thác đồng thời tăng chi phí bơm ép. Mô hình phân phối lưu lượng khí sẽ được xây dựng dựa trên các tính chất của GLPC cho một giếng khai thác. Dòng chảy trong vỉa được giải sử chỉ bao gồm một pha lỏng, trong tubing sẽ là hai pha lỏng - khí, các điều kiện vật lý để tồn tại GLPC là duy nhất.\\
