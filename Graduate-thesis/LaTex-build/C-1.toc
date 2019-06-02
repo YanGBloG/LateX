@@ -16,12 +16,10 @@
 \contentsline {subsection}{\numberline {1.2.1}Gi\IeC {\h a}i thu\IeC {\d \acircumflex }t di truy\IeC {\`\ecircumflex }n}{8}{subsection.1.2.1}
 \contentsline {subsubsection}{\numberline {1.2.1.1}Nguy\IeC {\^e}n l\IeC {\'y} gi\IeC {\h a}i thu\IeC {\d \acircumflex }t}{8}{subsubsection.1.2.1.1}
 \contentsline {subsubsection}{\numberline {1.2.1.2}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n di truy\IeC {\`\ecircumflex }n}{10}{subsubsection.1.2.1.2}
-\contentsline {subsection}{\numberline {1.2.2}B\IeC {\`a}i to\IeC {\'a}n th\IeC {\`\ohorn }i gian v\IeC {\`a} m\IeC {\^o} h\IeC {\`\i }nh ARIMA}{13}{subsection.1.2.2}
-\contentsline {subsubsection}{\numberline {1.2.2.1}B\IeC {\`a}i to\IeC {\'a}n th\IeC {\`\ohorn }i gian}{13}{subsubsection.1.2.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2.2}M\IeC {\^o} h\IeC {\`\i }nh ARIMA}{15}{subsubsection.1.2.2.2}
-\contentsline {section}{\numberline {1.3}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh gas lift}{16}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh v\IeC {\`a} b\IeC {\`a}i to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{16}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}M\IeC {\^o} h\IeC {\`\i }nh h\IeC {\`\i }nh to\IeC {\'a}n h\IeC {\d o}c}{18}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Gi\IeC {\h a}i ph\IeC {\'a}p s\IeC {\'\ocircumflex }}{22}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{23}{section.1.4}
+\contentsline {subsection}{\numberline {1.2.2}B\IeC {\`a}i to\IeC {\'a}n th\IeC {\`\ohorn }i gian}{13}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh gas lift}{15}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}\IeC {\DJ }\IeC {\uhorn }\IeC {\`\ohorn }ng cong \IeC {\dj }\IeC {\d \abreve }c t\IeC {\'\i }nh v\IeC {\`a} b\IeC {\`a}i to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{15}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}M\IeC {\^o} h\IeC {\`\i }nh to\IeC {\'a}n h\IeC {\d o}c}{16}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Gi\IeC {\h a}i ph\IeC {\'a}p s\IeC {\'\ocircumflex }}{21}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Thu\IeC {\d \acircumflex }t to\IeC {\'a}n t\IeC {\'\ocircumflex }i \IeC {\uhorn }u}{21}{section.1.4}
 \contentsfinish 
