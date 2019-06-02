@@ -1,0 +1,8 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {section}{M\IeC {\d U}C L\IeC {\d U}C}{}{chapter*.1}
+\contentsline {section}{DANH S\IeC {\'A}CH H\IeC {\`I}NH V\IeC {\~ E}}{}{chapter*.2}
+\contentsline {section}{DANH S\IeC {\'A}CH B\IeC {\h A}NG BI\IeC {\h \ECIRCUMFLEX }U}{}{chapter*.3}
+\contentsline {section}{DANH M\IeC {\d U}C K\IeC {\'Y} HI\IeC {\d \ECIRCUMFLEX }U V\IeC {\`A} VI\IeC {\'\ECIRCUMFLEX }T T\IeC {\'\ABREVE }T}{}{chapter*.3}
+\contentsline {chapter}{\numberline {1}PH\IeC {\UHORN }\IeC {\OHORN }NG PH\IeC {\'A}P PH\IeC {\^A}N T\IeC {\'I}CH \IeC {\DJ }I\IeC {\h \ECIRCUMFLEX }M N\IeC {\'U}T}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Ti\IeC {\`\ecircumflex }n x\IeC {\h \uhorn } l\IeC {\'y} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{1}{section.1.1}
+\contentsfinish 
