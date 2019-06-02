@@ -1,0 +1,250 @@
+\immediate\write18{makeindex template.nlo -s nomencl.ist -o template.nls}
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{vietnam}
+\usepackage[left=3cm, right=2.2cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{amssymb} 
+\usepackage{graphicx} 
+\usepackage[hidelinks, unicode]{hyperref}
+\usepackage[labelsep=period]{caption}
+\usepackage[table]{xcolor}
+\usepackage{titletoc}
+\usepackage{etoc}
+\usepackage{mathptmx}
+\usepackage{sectsty}
+\usepackage{multirow}
+\usepackage{booktabs, tabularx}
+\usepackage{courier}
+\usepackage{subfig}
+\usepackage{nomencl}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{anyfontsize}
+\usepackage[fontsize=13pt]{scrextend}
+\newcommand{\code}[1]{\texttt{#1}}
+\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\nomname}{Danh mục ký hiệu và viết tắt}
+
+
+\makenomenclature
+\makeatletter
+\titlecontents{chapter}[3cm] % <-- seems to set some specific left margin
+{\color{black}\bfseries\addvspace{3mm}}
+{\makebox[0cm][r]{\MakeUppercase\@chapapp\hspace{.5em}\thecontentslabel\hspace{0.75cm}}}
+{} %     ^^^ pretendously zero width box puts its contents in the left margin
+{\hfill\makebox[-2cm]{\thecontentspage}}  % 3cm = twice 1.5cm
+\chapternumberfont{\Large}
+\chaptertitlefont{\Large}
+
+\titleformat{\chapter}[hang] 
+{\normalfont\fontsize{14}{15}\bfseries}{CHƯƠNG \thechapter.}{1em}{} 
+\titlespacing*{\chapter}{0pt}{-7pt}{7pt}
+
+\titleformat{\section}
+{\normalfont\fontsize{13}{15}\bfseries}{\thesection.}{1em}{}
+\titlespacing*{\section}{0pt}{-5pt}{-6pt}  
+
+\titleformat{\subsection}
+{\normalfont\fontsize{13}{15}\bfseries\itshape}{\thesubsection.}{1em}{}
+\titlespacing*{\subsection}{0pt}{-20pt}{-6pt}
+
+\titleformat{\subsubsection}
+{\normalfont\fontsize{13}{15}\itshape}{\thesubsubsection.}{1em}{}
+\titlespacing*{\subsubsection}{0pt}{-20pt}{-6pt}
+
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+
+
+\setlist[itemize]{itemsep=-0.3em, topsep=0pt}
+\setlength\parindent{0pt}
+\setlength{\parskip}{10pt}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\geometry{letterpaper}
+
+% \title{\textbf{ĐỒ ÁN CÔNG NGHỆ MỎ}}
+% \author{Bùi Trọng Nghĩa\\Diệp Công Trứ}
+
+\begin{document}
+\pagenumbering{gobble}
+% \thispagestyle{empty}
+\clearpage
+
+\pdfbookmark{\contentsname}{content}
+% \maketitle
+
+\begin{center}
+	\centering
+	\text{ĐỒ ÁN ĐƯỢC HOÀN THÀNH TẠI}\\ 
+	\textbf{TRƯỜNG ĐẠI HỌC DẦU KHÍ VIỆT NAM}
+\end{center}
+Người hướng dẫn chính:..................................................\\
+(\textit{Ghi rõ họ, tên, học hàm, học vị})\\
+\newline
+Người hướng dẫn phụ (\textit{Nếu có}):......................................\\
+(\textit{Ghi rõ họ, tên, học hàm, học vị})\\
+\newline
+Người chấm phản biện:....................................................\\
+(\textit{Ghi rõ họ, tên, học hàm, học vị})\\
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+Đồ án được bảo vệ tại:
+\begin{center}
+	\centering
+	\textbf{HỘI ĐỒNG CHẤM ĐỒ ÁN MÔN HỌC}\\
+	\textbf{TRƯỜNG ĐẠI HỌC DẦU KHÍ VIỆT NAM}\\
+	Ngày .... tháng .... năm ....
+\end{center}
+\newpage
+
+\begingroup
+\fontsize{10pt}{12pt}\selectfont
+TRƯỜNG ĐẠI HỌC DẦU KHÍ VIỆT NAM \hspace*{1.5cm} \textbf{CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM}\\
+\hspace*{1.7cm}\underline{\textbf{KHOA DẦU KHÍ}} \hspace*{4.4cm} \underline{\textbf{Độc Lập - Tự Do - Hạnh Phúc}}
+\endgroup
+
+\begin{center}
+	\centering
+	\textbf{NHIỆM VỤ ĐỒ ÁN MÔN HỌC}
+\end{center}
+
+\textbf{Họ và Tên sinh viên thực hiện:}
+	\begin{itemize}
+		\item Bùi Trọng Nghĩa - MSSV: 04PET110011
+		\item Diệp Công Trứ - MSSV: 04PET110017
+	\end{itemize}
+\textbf{Ngành:} Khoan - Khai thác dầu khí. \hspace*{3cm}\textbf{Lớp:} K4KKT\\
+\textbf{1. Tên đồ án môn học:} Tối ưu hóa khai thác cho giếng dầu bằng phương pháp phân tích điểm nút.\\
+\textbf{2. Nhiệm vụ:} \\
+\hspace*{1cm}- Tìm hiểu về phương pháp phân tích điểm nút\\
+\hspace*{1cm}- Các phương trình đặc tính giếng\\
+\hspace*{1cm}- Ứng xử của dòng chảy trong ống\\
+\hspace*{1cm}- Tối ưu hóa khai thác cho một giếng dầu\\
+\hspace*{1cm}- Xây dựng mô hình phân tích điểm nút để thực hiện tối ưu hóa khai thác cho giếng X.\\
+\textbf{3. Ngày giao Đồ án môn học: }20/09/2018\\
+\textbf{4. Ngày hoàn thành Đồ án môn học: }17/12/2018\\
+\textbf{5. Người hướng dẫn: }
+	\begin{itemize}
+		\item ThS. Nguyễn Viết Khôi Nguyên
+		\item ThS. Phạm Hữu Tài
+	\end{itemize}
+\begin{flushright}
+Bà Rịa - Vũng Tàu, ngày \ldots tháng \ldots năm \ldots
+\end{flushright}
+\begingroup
+\fontsize{12pt}{12pt}\selectfont
+\textbf{HIỆU TRƯỞNG} \hspace{30pt} \textbf{TRƯỞNG PHÒNG ĐÀO TẠO} \hspace{30pt} \textbf{NGƯỜI HƯỚNG DẪN}\\
+(Ký, ghi rõ họ tên) \hspace{60pt} (Ký, ghi rõ họ tên) \hspace{80pt} (Ký, ghi rõ họ tên)
+\endgroup
+
+\newpage
+
+\begingroup
+\fontsize{10pt}{12pt}\selectfont
+TRƯỜNG ĐẠI HỌC DẦU KHÍ VIỆT NAM \hspace*{1.5cm} \textbf{CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM}\\
+\hspace*{1.7cm}\underline{\textbf{KHOA DẦU KHÍ}} \hspace*{4.4cm} \underline{\textbf{Độc Lập - Tự Do - Hạnh Phúc}}
+\endgroup
+
+\begin{center}
+	\centering
+	\textbf{PHIẾU NHẬN XÉT ĐỒ ÁN MÔN HỌC}\\
+	\textbf{(Giáo viên ghi nhận xét của mình, bằng tay, vào phần này)}
+\end{center}
+\begin{enumerate}
+	\item[1.] Về hình thức kết cấu Đồ án:\\.....................................................................................................................................
+	\item[2.] Về nội dung: 
+	\begin{enumerate}
+		\item[2.1] Nhận xét về phần tổng quan tài liệu:
+	\end{enumerate}
+	\item[] ....................................................................................................................................
+	\begin{enumerate}
+		\item[2.2] Nhận xét về phương pháp nghiên cứu:
+	\end{enumerate}
+	\item[] ....................................................................................................................................
+	\begin{enumerate}
+		\item[2.3] Nhận xét về kết quả đạt được:
+	\end{enumerate}
+	\item[] ....................................................................................................................................
+	\begin{enumerate}
+		\item[2.4] Nhận xét phần kết luận:
+	\end{enumerate}
+	\item[] ....................................................................................................................................
+	\begin{enumerate}
+		\item[2.5] Những thiếu sót và tồn tại của Đồ án:
+	\end{enumerate}
+	\item[] ....................................................................................................................................
+\end{enumerate}
+\textbf{Điểm:}....................................................(Ghi bằng chữ)
+\begin{flushright}
+Bà Rịa - Vũng Tàu, ngày \ldots tháng \ldots năm \ldots \\
+\end{flushright}
+\hspace{300pt} \textbf{NGƯỜI HƯỚNG DẪN}\\
+\hspace*{316pt} (Ký, ghi rõ họ tên)
+\newpage
+\pagenumbering{roman}
+
+\begin{center}
+	\centering
+	\textbf{LỜI CAM KẾT}
+	\addcontentsline{toc}{section}{LỜI CAM KẾT}
+\end{center}
+Chúng tôi xin cam đoan những kết quả nghiên cứu được trình bày trong đồ án này là hoàn toàn trung thực, không vi phạm bất cứ điều gì trong luật sở hữu trí tuệ và pháp luật Việt Nam. Nếu sai, chúng tôi sẽ hoàn toàn chịu trách nhiệm trước pháp luật.\\
+\hspace*{250pt} \textbf{ĐẠI DIỆN TÁC GIẢ ĐỒ ÁN}\\
+\hspace*{280pt} (Ký, ghi rõ họ tên)
+\newline
+\newline
+\hspace*{282pt} \textit{Bùi Trọng Nghĩa}
+
+\clearpage
+
+\begin{center}
+	\centering
+	\textbf{LỜI CẢM ƠN}
+	\addcontentsline{toc}{section}{LỜI CẢM ƠN}
+\end{center}
+Với lòng biết ơn sâu sắc nhất, nhóm em xin gửi đến quý Thầy Cô ở khoa Dầu Khí – trường Đại Học Dầu Khí Việt Nam, không những dùng tri thức và tâm huyết của mình để truyền đạt vốn kiến thức quý báu cho chúng em trong suốt thời gian học tập tại trường mà còn tạo điều kiện và luôn ủng hộ nhóm em trong quá trình nghiên cứu hoàn thiện đồ án của nhóm. 
+
+Đồng thời chúng em xin gửi lời cám ơn chân thành đến Thầy \textbf{Nguyễn Viết Khôi Nguyên} và Thầy \textbf{Phạm Hữu Tài} đã đồng ý trở thành người trực tiếp hướng dẫn, đưa ra gợi ý và kịp thời chỉ ra những sai sót cho chúng em trong suốt thời gian hoàn thiện đồ án.
+
+Qua quá trình hoàn thiện đồ án, nhóm đã có nhiều cơ hội với những kiến thức mới đồng thời củng cố và vận dụng những kiến thức chuyên ngành vào thực tế, rèn luyện được kĩ năng nghiên cứu thực tế bổ ích từ Thầy \textbf{Nguyễn Viết Khôi Nguyên} và Thầy \textbf{Phạm Hữu Tài}.
+
+Do quá trình thực hiện đồ án còn gặp nhiều khó khăn nên kết quả hoàn thiện còn nhiều thiếu sót. Kính mong quý Thầy, Cô đóng góp thêm ý kiến để những đồ án tiếp theo nhóm em có thể đạt kết quả tốt hơn và có thể hoàn thiện được bản thân mình hơn.
+\begin{flushright}
+Nhóm chúng em xin chân thành cảm ơn!
+\end{flushright}
+
+\newpage
+\begin{center}
+	\centering
+	\textbf{LỜI MỞ ĐẦU}
+\end{center}
+Nhu cầu năng lượng luôn luôn là những vấn đề cấp thiết nhất đối với các quốc gia đang phát triển trong đó có Việt Nam. Khai thác dầu thô là một trong những phương án tốt nhất để giải quyết vấn đề này. Để khai thác một cách tối ưu nhất, mang lại lợi nhuận tốt nhất, quá trình tối ưu hóa khai thác cần được ưu tiên xem xét hàng đầu. Một trong những phương pháp đem lại hiệu quả tốt nhất được áp dụng trên thế giới là phương pháp phân tích điểm nút. Đồ án này sẽ trình bày về phương pháp phân tích điểm nút để nâng cao khả năng khai thác tại thềm lục địa Việt Nam. Dựa trên sự phân tích mối quan hệ giữa hiệu suất đường dòng vào (IPR, Inflow Performance Relationship) và đường dòng ra (OPR, Outflow Performance Relationship) để có thể đưa ra lưu lượng khai thác tối ưu nhất. Đồng thời đưa ra những yếu tố ảnh hưởng đến dòng vào và dòng ra như kích thước ống cuộn, kích thước đường dòng, áp suất bình tách. Sử dụng các thông số được tính toán để đưa ra được giải pháp cho toàn mỏ.
+
+\tableofcontents
+\addcontentsline{toc}{section}{MỤC LỤC}
+
+\listoffigures
+\addcontentsline{toc}{section}{DANH SÁCH HÌNH VẼ}
+
+\listoftables
+\addcontentsline{toc}{section}{DANH SÁCH BẢNG BIỂU}
+
+\printnomenclature
+\addcontentsline{toc}{section}{DANH MỤC KÝ HIỆU VÀ VIẾT TẮT}
+
+\clearpage
+\pagenumbering{arabic}
+\newpage
+
+\chapter{PHƯƠNG PHÁP PHÂN TÍCH ĐIỂM NÚT}
+\section{Hệ thống khai thác}
+Để có thể khai thác, vận chuyển sản phẩm từ vỉa cần phải có một hệ thống khai thác hoàn chỉnh. Một hệ thống khai thác hoàn chỉnh phải có sự liên kết giữa đặc tính vỉa và đặc tính hệ thống đường ống, vì vậy khi thực hiện phân tích toàn bộ hệ thống khai thác được xem như là một đơn vị thống nhất.
+
+\end{document}
