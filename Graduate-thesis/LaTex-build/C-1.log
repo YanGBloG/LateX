@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.16)  2 JUN 2019 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.11.16)  3 JUN 2019 15:52
 entering extended mode
 **D:/Thesis/LaTex-build/C-1.tex
 (D:/Thesis/LaTex-build/C-1.tex
@@ -1032,6 +1032,135 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 r\tikz\libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\pgfplots\pgfplots.
+sty"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+s.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+s.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+score.code.tex"
+\t@pgfplots@toka=\toks43
+\t@pgfplots@tokb=\toks44
+\t@pgfplots@tokc=\toks45
+\pgfplots@tmpa=\dimen275
+\c@pgfplots@coordindex=\count162
+\c@pgfplots@scanlineindex=\count163
+
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
+plotssysgeneric.code.tex"))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pg
+fplotslibrary.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
+ompatib\pgfplotsoldpgfsupp_loader.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
+ompatib\pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
+ompatib\pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count164
+)
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\oldpgfc
+ompatib\pgfplotsoldpgfsupp_leq.code.tex"))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
+fplotsutil.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
+ucture\pgfplotsliststructure.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
+ucture\pgfplotsliststructureext.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
+ucture\pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count165
+)
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
+ucture\pgfplotsmatrix.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\numtabl
+e\pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count166
+\t@pgfplotstable@a=\toks46
+)
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\liststr
+ucture\pgfplotsdeque.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
+fplotsbinary.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
+fplotsbinary.data.code.tex"))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
+fplotsutil.verb.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\libs\pg
+flibrarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count167
+
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\sys\pgf
+librarypgfplots.surfshading.pgfsys-pdftex.def")))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
+fplotscolormap.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\util\pg
+fplotscolor.code.tex"))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+sstackedplots.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+splothandlers.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+smeshplothandler.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+smeshplotimage.code.tex")))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+s.scaling.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+scoordprocessing.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+s.errorbars.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+s.markers.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+sticks.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgfplots\pgfplot
+s.paths.code.tex")
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\modules\pgfm
+oduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen276
+\pgfdecoratedremainingdistance=\dimen277
+\pgfdecoratedinputsegmentcompleteddistance=\dimen278
+\pgfdecoratedinputsegmentremainingdistance=\dimen279
+\pgf@decorate@distancetomove=\dimen280
+\pgf@decorate@repeatstate=\count168
+\pgfdecorationsegmentamplitude=\dimen281
+\pgfdecorationsegmentlength=\dimen282
+)
+\tikz@lib@dec@box=\box73
+)
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathmorphing.code.tex"))
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex"
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\de
+corations\pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count169
+\pgfplots@xmin@reg=\dimen283
+\pgfplots@xmax@reg=\dimen284
+\pgfplots@ymin@reg=\dimen285
+\pgfplots@ymax@reg=\dimen286
+\pgfplots@zmin@reg=\dimen287
+\pgfplots@zmax@reg=\dimen288
+)
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\frontendlaye
+r\tikz\libraries\tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
+flibraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\koma-script\scrext
 end.sty"
 Package: scrextend 2018/03/30 v3.25 KOMA-Script package (extend other classes w
@@ -1073,7 +1202,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\generic\pgf\libraries\pg
 flibraryarrows.code.tex"
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen275
+\arrowsize=\dimen289
 ))
 \@nomenclaturefile=\write4
 \openout4 = `C-1.nlo'.
@@ -1083,25 +1212,25 @@ Writing nomenclature file C-1.nlo
 (C-1.aux)
 \openout1 = `C-1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for T5+ptm on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Try loading font information for T5+ptm on input line 82.
 
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\vntex\t5ptm.fd"
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
@@ -1144,17 +1273,17 @@ File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count162
-\scratchdimen=\dimen276
-\scratchbox=\box73
-\nofMPsegments=\count163
-\nofMParguments=\count164
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count165
-\MPscratchDim=\dimen277
-\MPnumerator=\count166
-\makeMPintoPDFobject=\count167
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count170
+\scratchdimen=\dimen290
+\scratchbox=\box74
+\nofMPsegments=\count171
+\nofMParguments=\count172
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count173
+\MPscratchDim=\dimen291
+\MPnumerator=\count174
+\makeMPintoPDFobject=\count175
+\everyMPtoPDFconversion=\toks48
 )
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -1171,8 +1300,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box74
-Package hyperref Info: Link coloring OFF on input line 79.
+\AtBeginShipoutBox=\box75
+Package hyperref Info: Link coloring OFF on input line 82.
 
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -1182,11 +1311,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count168
+\c@section@level=\count176
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 82.
+LaTeX Info: Redefining \pageref on input line 82.
+LaTeX Info: Redefining \nameref on input line 82.
  (C-1.out) (C-1.out)
 \@outlinefile=\write5
 \openout5 = `C-1.out'.
@@ -1196,52 +1325,57 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 \Etoc@tf=\read2
  ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
+your preamble.
+ on input line 82.
+
 \tf@toc=\write6
 \openout6 = `C-1.toc'.
 
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <14> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 88.
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 88.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 88
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 91.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 91.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 91
 .
-
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 "
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 91
 .
 
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 91
 .
 
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
 "
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 88
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 91
 .
 
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 88.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 91.
  ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.62007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.80008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 91.
 LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <13> not available
-(Font)              Font shape `T5/ptm/b/n' tried instead on input line 88.
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 91.
  [1
 
 
@@ -1251,7 +1385,7 @@ ng (ext4): destination with the same identifier (name{page.}) has been already
 used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 \listoffigures
+l.93 \listoffigures
                     [2] (C-1.lof)
 \tf@lof=\write7
 \openout7 = `C-1.lof'.
@@ -1260,7 +1394,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.93 \listoftables
+l.96 \listoftables
                    [3
 
 ] (C-1.lot)
@@ -1285,18 +1419,18 @@ l.45 \end{thenomenclature}
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 \clearpage
-                [6]
+l.102 \clearpage
+                 [6]
 Ch\uhorn \ohorn ng 1.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 107.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 110.
 
 ("C:\Users\Black\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <13> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 107.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
@@ -1305,53 +1439,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
 ]
 LaTeX Font Info:    Font shape `T5/ptm/bx/it' in size <13> not available
-(Font)              Font shape `T5/ptm/b/it' tried instead on input line 117.
+(Font)              Font shape `T5/ptm/b/it' tried instead on input line 120.
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
 
-<fig/rate-vs-depth.png, id=168, 596.98032pt x 427.5975pt>
+<fig/rate-vs-depth.png, id=199, 596.98032pt x 427.5975pt>
 File: fig/rate-vs-depth.png Graphic file (type png)
 <use fig/rate-vs-depth.png>
-Package pdftex.def Info: fig/rate-vs-depth.png  used on input line 125.
+Package pdftex.def Info: fig/rate-vs-depth.png  used on input line 128.
 (pdftex.def)             Requested size: 358.19095pt x 256.56047pt.
 [2 <./fig/rate-vs-depth.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-<fig/gas-lift-system.png, id=176, 666.23906pt x 530.73282pt>
+<fig/gas-lift-system.png, id=207, 666.23906pt x 530.73282pt>
 File: fig/gas-lift-system.png Graphic file (type png)
 <use fig/gas-lift-system.png>
-Package pdftex.def Info: fig/gas-lift-system.png  used on input line 157.
+Package pdftex.def Info: fig/gas-lift-system.png  used on input line 160.
 (pdftex.def)             Requested size: 399.74652pt x 318.44214pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3] [4 <./fig/gas-lift-system.png>]
-<fig/continuous-gas-lift.png, id=187, 313.17pt x 384.6872pt>
+<fig/continuous-gas-lift.png, id=218, 313.17pt x 384.6872pt>
 File: fig/continuous-gas-lift.png Graphic file (type png)
 <use fig/continuous-gas-lift.png>
-Package pdftex.def Info: fig/continuous-gas-lift.png  used on input line 170.
+Package pdftex.def Info: fig/continuous-gas-lift.png  used on input line 173.
 (pdftex.def)             Requested size: 219.21748pt x 269.27919pt.
  [5 <./fig/continuous-gas-lift.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 273--274
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 286--288
 
  []
 
@@ -1361,49 +1495,82 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11] [12] [13
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
  []
 
-[14]
-<fig/glpc.png, id=253, 477.28313pt x 358.33875pt>
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+[16]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[17] [18]
+Overfull \hbox (10.08316pt too wide) in paragraph at lines 585--587
+[]\T5/ptm/m/n/13 Mët v i thuªt to¡n nêi ti¸ng câ thº kº ¸n nh÷ \T5/ptm/m/it/13
+ Gra-di-ent De-scent, Adam, RM-SProp, AdaDelta,
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 591--592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 606--608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+[20]
+<fig/glpc.png, id=325, 477.28313pt x 358.33875pt>
 File: fig/glpc.png Graphic file (type png)
 <use fig/glpc.png>
-Package pdftex.def Info: fig/glpc.png  used on input line 436.
+Package pdftex.def Info: fig/glpc.png  used on input line 625.
 (pdftex.def)             Requested size: 286.37207pt x 215.0049pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 456--458
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 645--647
 
  []
 
-[16 <./fig/glpc.png>] [17] [18] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 611--613
+[22 <./fig/glpc.png>] [23] [24] [25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 800--802
 
  []
 
-[21] [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 627.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 627.
+[27] [28]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 816.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 816.
  (C-1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 627.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 627.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 816.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 816.
 Package rerunfilecheck Info: File `C-1.out' has not changed.
-(rerunfilecheck)             Checksum: B2AF0C177972E62417508953A50F0802;4173.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 627.
+(rerunfilecheck)             Checksum: 3016D902B001CBF07CBC00BA22CAC9FE;5081.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 816.
  ) 
 Here is how much of TeX's memory you used:
- 25150 strings out of 492970
- 450392 string characters out of 3126593
- 534313 words of memory out of 3000000
- 28486 multiletter control sequences out of 15000+200000
- 39831 words of font info for 67 fonts, out of 3000000 for 9000
+ 35636 strings out of 492970
+ 800848 string characters out of 3126593
+ 975537 words of memory out of 3000000
+ 38803 multiletter control sequences out of 15000+200000
+ 47330 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,56p,1342b,734s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,20n,96p,1342b,2136s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }{C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/vntex/t5.enc
 }<C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
@@ -1414,16 +1581,17 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Black/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users
 /Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:/Us
 ers/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/symbol/usyr.pfb><C:
-/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/vntex/urwvn/utmb8v.p
-fb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/vntex/urwvn/ut
-mbi8v.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmr8a.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/vnt
-ex/urwvn/utmr8v.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/urw/times/utmri8a.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/vntex/urwvn/utmri8v.pfb>
-Output written on C-1.pdf (28 pages, 415106 bytes).
+/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb
+><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/vntex/urwvn/utmb
+8v.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/vntex/urwv
+n/utmbi8v.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/vntex/urwvn/utmr8v.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/urw/times/utmri8a.pfb><C:/Users/Black/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/vntex/urwvn/utmri8v.pfb>
+Output written on C-1.pdf (34 pages, 454923 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 494 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
