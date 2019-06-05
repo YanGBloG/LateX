@@ -23,10 +23,13 @@
 \usepackage{enumitem}
 \usepackage{anyfontsize}
 \usepackage{tikz}
+\usepackage{pgfplots}
 \usepackage[fontsize=13pt]{scrextend}
 \newcommand{\code}[1]{\texttt{#1}}
 \renewcommand{\baselinestretch}{1.5}
 \renewcommand{\nomname}{Danh mục ký hiệu và viết tắt}
+
+\def\layersep{3cm}
 
 \usetikzlibrary{shapes.geometric, arrows}
 
@@ -416,6 +419,195 @@ Tổng quát nếu lấy sai phân bậc $d$ sẽ đạt được tính dừng c
 	\begin{equation}
 		\Delta^dY_t = (1 - \mathbb{L})^dY_t
 	\end{equation}
+
+\subsection{Mạng neuron truyền thẳng đa lớp}
+Mạng neuron truyền thẳng đa lớp (Multilayer Perceptron, MLP hoặc feedforward network) là một kĩ thuật trí tuệ nhân tạo, được xem như là một trong những tinh túy của kĩ thuật học sâu. Mục đích khi xây dựng kĩ thuật này chính là tạo ra một hàm số xấp xỉ $f$ có khả năng miêu tả được mối quan hệ giữa hai đại lượng đầu vào ($\textbf{x}$) và đầu ra ($\textbf{y}$), đơn giản là $\mathbf{y} = f(\mathbf{x}; \mathbf{\theta})$ với $\mathbf{\theta}$ là tập hợp các tham số đạt được trong quá trình tính toán. Mạng truyền thẳng là một kĩ thuật cực kì quan trọng trong các kĩ thuật trí tuệ nhân tạo, là nên tảng của hầu hết các kĩ thuật tiên tiến khác như mạng tích chập hay mạng hồi quy. Đây đều là những mạng cực kì phức tạp và có ý nghĩa to lớn trong ngành công nghiệp hiện đại.
+
+Lấy cảm hứng từ hệ neuron thần kinh sinh học, với tính chất truyền thông tin thẳng thông qua hàm số từ các giá trị đầu vào tới các phép tính trung gian xác định $f$ đến điểm cuối là các giá trị đầu ra; những mô hình xác định hàm $f$ theo cách đó được gọi là mô hình truyền thẳng; hàm $f$ lúc này bao gồm các thành phần hàm số khác nhau đại diện cho từng vị trí liên kết tạo thành một cấu trúc chuỗi, cấu trúc chuỗi này tạo nên mạng neuron truyền thẳng hay ngắn gọn là mạng truyền thẳng. Ví dụ, một chuỗi bao gồm ba hàm $f_1, f_2$ và $f_3$ sẽ có cấu trúc như sau:
+	\begin{equation}
+		f(\mathbf{x}) = f_3(f_2(f_1(\mathbf{x})))
+	\end{equation}
+$f(\mathbf{x})$ chính là hàm xấp xỉ cần tìm, các hàm $f_1, f_2, f_3$ là các hàm liên kết. Trong trường hợp này hàm $f_1$ đại diện cho lớp thứ nhất của mạng, hàm $f_2$ đại diện cho lớp thứ hai và cứ tiếp tục như vậy cho tới lớp thứ $n$. Chiều dài của chuỗi  hay ``độ sâu'' của mô hình sẽ được xem như là một trong các nhân tố tạo nên mức độ phức tạp của mạng. Phân lớp cuối cùng của cấu trúc được gọi là phân lớp đầu ra, các phân lớp trước phân lớp đầu ra được gọi là phân lớp ẩn; được gọi là ``ẩn'' vì các phân lớp này không hiển thị các giá trị kết quả được tính toán trong phân lớp đó mà truyền thẳng sang cho phân lớp tiếp theo. Mỗi phân lớp ẩn của mạng được xem như là một vector, lúc này, chiều của vector hay chiều của phân lớp ẩn chính là ``độ rộng'' của mô hình, là nhân tố thứ hai tạo nên độ phức tạp của mạng. Mỗi phần tử trong vector đóng vai trò như là một neuron hay $unit$, thông thường mỗi $unit$ sẽ nhận tín hiệu từ các $unit$ ở phân lớp trước nó.
+
+Để đưa một mạng truyền thẳng vào sử dụng cần xác định các tham số cơ bản đi kèm như độ sâu, độ rộng, số lượng $unit$ trong mỗi phân lớp kèm theo đó là các hàm kích hoạt, hàm tối ưu và phương pháp đánh mức độ chính xác của hàm $f$.\\
+
+\subsubsection{Cấu trúc cơ bản}
+Xác định cấu trúc cơ bản của mạng cũng chính là xác định các thông số về độ sâu ($N_l$) và độ rộng ($N_n$) của mô hình. Để có được một kết quả tốt, $N_l$ và $N_n$ phải phù hợp với bài toán đang giải quyết, quá đơn giản hoặc quá phức tạp đều đem lại một kết quả kém chính xác. Trong thực tế không có một phương pháp cụ thể nào để xác định các thông số này, hầu hết $N_l$ và $N_n$ đều được xác định dựa trên cảm quan của người giải quyết bài toán đối với dữ liệu đầu vào của bài toán, điều này thực sự rất khó khăn đối với những người mới bắt đầu. Do đó, một vài cá nhân đã đưa ra một cách không chính quy đó là dựa vào số lượng các thuộc tính của dữ liệu sau khi xử lý để xác định $N_l$ và $N_n$. Mặc dù không chính quy, tuy nhiên kết quả đem lại từ cách này cũng khá khả quan đối với các bài toán đơn giản có dữ liệu đầu vào thuộc dạng dữ liệu cấu trúc (có thể diễn tả dưới dạng số).
+
+Về cơ bản, một mạng truyền thẳng có thể được thể hiện như sau:
+
+	\begin{figure}[h]
+		\centering
+		\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+		    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+		    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+		    \tikzstyle{input neuron}=[neuron, fill=green!50];
+		    \tikzstyle{output neuron}=[neuron, fill=red!50];
+		    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+		    \tikzstyle{annot} = [text width=4em, text centered]
+
+		    % Draw the input layer nodes
+		    \foreach \name / \y in {1,...,4}
+		    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+		        \node[input neuron, pin=left:Input \#\y] (I-\name) at (0,-\y) {};
+
+		    % Draw the hidden layer nodes
+		    \foreach \name / \y in {1,...,5}
+		        \path[yshift=0.5cm]
+		            node[hidden neuron] (H1-\name) at (1.5cm,-\y cm) {};
+		            
+		    \foreach \name / \y in {1,...,5}
+		        \path[yshift=0.5cm]
+		            node[hidden neuron] (H2-\name) at (3cm,-\y cm) {};
+
+		    % Draw the output layer node
+		    \node[output neuron,pin={[pin edge={->}]right:Output}, right of=H1-3] (O) {};
+		    
+		    % Connect every node in the input layer with every node in the
+		    % hidden layer.
+		    \foreach \source in {1,...,4}
+		        \foreach \dest in {1,...,5}
+		            \path (I-\source) edge (H1-\dest);
+
+		    \foreach \source in {1,...,5}
+		        \foreach \dest in {1,...,5}
+		            \path (H1-\source) edge (H2-\dest);
+		    % Connect every node in the hidden layer with the output layer
+		    \foreach \source in {1,...,5}
+		        \path (H2-\source) edge (O);
+
+		    % Annotate the layers
+		    \node[annot,above of=H1-1, node distance=1cm] (hl1) {H1};
+		    \node[annot,above of=H2-1, node distance=1cm] (hl2) {H2};
+		    \node[annot,left of=hl2] {I-L};
+		    \node[annot,right of=hl1] {O-L};
+		\end{tikzpicture}
+		\caption{Cấu trúc của một mạng truyền thẳng}
+		\label{fig:feedforward-network}
+	\end{figure}
+
+Với Input, Output, I-L, O-L lần lượt là các dữ liệu đưa vào mạng, kết quả đạt được, phân lớp đầu vào, phân lớp đầu ra và các phân lớp ẩn H1, H2. Có thể thấy được mạng này có độ sâu là 3 (phân lớp đầu vào không được tính vào độ sâu của mạng), độ rộng là 5 với 2 phân lớp ẩn. Một mạng như vậy cũng được gọi là mạng liên kết toàn phần.\\
+
+\subsubsection{Hàm kích hoạt}
+Về cơ bản hàm kích hoạt chính là để chuẩn hóa các thông tin đầu ra của mỗi unit. Phức tạp hơn, nếu coi dữ liệu đầu vào là một ma trận hoặc một vector, khi áp dụng hàm kích hoạt cho ma trận (hoặc vector), nó sẽ được áp dụng cho từng thành phần của ma trận đó. Sau đó sắp xếp lại đúng theo thứ tự để được một ma trận có kích thước bằng với ma trận đầu vào của phân lớp tiếp theo.
+
+Một vài hàm kích hoạt nổi tiếng như \textit{Linear, Sigmoid, Softmax, Tanh, ReLU} ngoài ra còn nhiều biến thể khác tuy nhiên sẽ không được nhắc tới trong phạm vi của luận án.
+
+\textit{a. Hàm Linear}
+
+Hàm $Linear$ thuộc loại hàm kích hoạt đơn giản nhất, biến đổi các tham số đầu vào theo hàm tuyến tính $y = w.x + b$. Nhược điểm của hàm $Linear$ là không thể biến đổi phi tuyến, thường được sử dụng trong các bài toán đơn giản.
+
+\textit{b. Hàm Sigmoid}
+
+Hàm $Sigmoid$ biến đổi tham số đầu vào theo dạng:
+	\begin{equation}
+		y = \dfrac{1}{1 + e^{-x}}
+	\end{equation}
+Có thể thấy được đầu ra của hàm $Sigmoid$ nằm trong khoảng $[0, 1]$ (Hình \ref{fig:tanh-sigmoid-function}), do đó hàm $Sigmoid$ thường được kết hợp với một số kĩ thuật khác để áp dụng cho bài toán phân loại nhị phân. Hiện tại, hàm $Sigmoid$ không còn được sử dụng nhiều cho các bài toán phức tạp do hiện tượng tiêu biến giá trị tối ưu trong quá trình huấn luyện của mạng.
+
+	\begin{figure}[h]
+	    \centering
+	    \begin{tikzpicture}
+		    \begin{axis}[legend pos = north west,
+		    			 xlabel = $x$,
+		    			 ylabel = {$f(x)$}]
+		    \addplot[color=red]{1 / (1 + exp(-x))};
+		    \addlegendentry{Sigmoid}
+
+		    \addplot[color=blue]{(exp(x) - exp(-x)) / (exp(x) + exp(-x))};
+	    	\addlegendentry{Tanh}
+		    \end{axis}
+	    \end{tikzpicture}
+	    \caption{Hàm $Tanh$ và $Sigmoid$}
+	    \label{fig:tanh-sigmoid-function}
+	\end{figure}
+
+\textit{c. Hàm Tanh}
+
+Hàm $Tanh$ khá tương tự hàm $Sigmoid$ với giá trị đầu ra nằm trong khoảng $[-1, 1]$ (Hình \ref{fig:tanh-sigmoid-function}), đồng thời hàm $Tanh$ cũng mang nhược điểm chính đó là làm tiêu biến giá trị tối ưu. Tuy nhiên, vẫn có một số biến thể của hàm $Tanh$ còn được sử dụng. Hàm $Tanh$ có dạng như sau:
+	\begin{equation}
+		y = \dfrac{e^x - e^{-x}}{e^x + e^{-x}}
+	\end{equation}
+
+\textit{d. Hàm softmax}
+
+Hàm $Softmax$ là một hàm rất đặc biệt có thể biến đổi đầu vào dạng số trở thành đầu ra dạng xác suất có tổng bằng một. Hàm $Softmax$ cực kì thích hợp cho các bài toán phân loại. Hàm $Softmax$ có dạng như sau:
+	\begin{equation}
+		y_i = \dfrac{e^{x_i}}{\sum e^{x_i}}
+	\end{equation}
+Có thể lấy một ví dụ như sau đối với hàm $Softmax$, các giá trị đầu ra sau biến đổi luôn có tổng bằng một.
+	\begin{align}
+		x_i = 
+	    \begin{bmatrix}
+	        1.5 \\
+	        0.7 \\
+	        0.4
+	    \end{bmatrix} \Longrightarrow
+	    y_i = \dfrac{e^{x_i}}{\sum e^{x_i}} \Longrightarrow
+	    \begin{bmatrix}
+	        p = 0.58 \\
+	        p = 0.27 \\
+	        p = 0.15
+	    \end{bmatrix}
+	\end{align}
+
+\textit{e. Hàm ReLU}
+
+Hàm $ReLU$ (Rectified Linear Unit) và các biến thể của nó được sử dụng phổ biến nhất trong thời điểm hiện tại. Ưu điểm lớn nhất của nó chính là loại bỏ được hiện tượng tiêu biến giá trị tối ưu xuất hiện ở hàm $Tanh, Sigmoid$. Hàm $ReLU$ biến đổi các giá trị đầu vào theo dạng hàm số rất đơn giản:
+	\begin{equation}
+		y = max(0, x)
+	\end{equation}
+Kết hợp đồ thị Hình \ref{fig:relu-function}, hàm số trên có thể hiểu như sau:
+	\begin{equation}
+  		y =
+		    \begin{cases}
+		      0, & \text{khi}\ x < 0 \\
+		      x, & \text{khi}\ x \geq 0
+		    \end{cases}
+	\end{equation}
+	\begin{figure}[h]
+	    \centering
+	    \begin{tikzpicture}
+		    \begin{axis}[legend pos = north west,
+		    			 xlabel = $x$,
+		    			 ylabel = {$f(x)$}]
+		    \addplot[color=red]{max(0, x)};
+		    \addlegendentry{ReLU}
+		    \end{axis}
+	    \end{tikzpicture}
+	    \caption{Hàm ReLU}
+	    \label{fig:relu-function}
+	\end{figure}
+
+\subsubsection{Hàm tối ưu}
+Trong quá trình tính toán một hàm số được đưa ra để thể hiện sai số giữa các giá trị dự đoán và giá trị thực tế, hàm số này được gọi là hàm mất mát. Thực tế quá trình tính toán chính là tìm điểm tối ưu của hàm này, tức là tìm điểm nhỏ nhất của nó. Đó chính là nhiệm vụ của hàm tối ưu (cũng gọi là hàm học). Hàm tối ưu bao gồm các thuật toán toán học nhằm mục đích đưa giá trị hàm mất mát xuống mức thấp nhất. Giá trị sai số này càng thấp, kết quả đem lại càng tốt.
+
+Một vài thuật toán nổi tiếng có thể kể đến như \textit{Gradient Descent, Adam, RMSProp, AdaDelta, AdaGrad}. Về cơ bản các thuật toán này đều có chung một quy trình tính toán như sau:
+	\begin{itemize}
+		\item[1.] Tính toán sự ảnh hưởng khi thay đổi trọng số đối với hàm mất mát.
+		\item[2.] Thay đổi trọng số dựa trên sự ảnh hưởng đó.
+		\item[3.] Lặp lại bước 1 và 2 cho đến khi hàm mất mát đạt giá trị nhỏ nhất có thể.
+	\end{itemize}
+Trong đó có thể nói thuật toán $Adam$ và các biến thể của nó đang được sử dụng phổ biến nhất thời điểm hiện tại do khả năng hội tụ nghiệm nhanh chóng.\\
+
+\subsubsection{Phương pháp đánh giá}
+Phương pháp đánh giá (metrics) được sử dụng để tính toán định lượng chất lượng của kết quả dự đoán so với các giá trị thực tế, đồng thời cho người dùng một cái nhìn khách quan về chất lượng của mô hình. Các phương pháp đánh giá như \textit{trung bình bình phương sai số (MSE)}, \textit{căn bậc hai trung bình bình phương sai số (RMSE)}, \textit{trung bình sai số tuyệt đối (MAE)} thường được sử dụng cho một bài toán hồi quy. Tuy nhiên một bài toán thời gian cần các phương pháp đánh giá đặc biệt hơn thích hợp hơn cho một chuỗi thời gian liên tục: \textit{trung bình phần trăm sai số tuyệt đối (MAPE)}, \textit{trung bình tỉ lệ sai số tuyệt đối (MASE)}. Các phương pháp này được tính toán như sau:
+	\begin{equation}
+		MSE = \frac{1}{N}\sum_{i=0}^N(y_i - \widehat y_i)^2
+	\end{equation}
+	\begin{equation}
+		RMSE = \sqrt{\frac{1}{N}\sum_{i=0}^N(y_i - \widehat y_i)^2}
+	\end{equation}
+	\begin{equation}
+		MAE = \frac{1}{N}\sum_{i=0}^N|y_i - \widehat y_i|
+	\end{equation}
+	\begin{equation}
+		MAPE = \frac{1}{N}\sum_{i=1}^N\frac{|y_i - \widehat y_i|}{|y_i|}
+	\end{equation}
+	\begin{equation}
+		MASE = \frac{\sum_{i=1}^N|y_i - \widehat y_i|}{\frac{N}{N - 1}\sum_{i=2}^N|y_i - y_{i-1}|}
+	\end{equation}
+Trong đó $y_i$ là giá trị thực, $\widehat y_i$ là giá trị dự đoán, $N$ là tổng số dữ liệu. Trong quá trình đánh giá, giá trị tính toán từ các phương pháp này càng thấp càn tốt.\\
 
 \section{Đường cong đặc tính gas lift}
 Mục tiếp chính khi sử dụng phương pháp gas lift chính là thu được lưu lượng dầu tối đa với lưu lượng gas lift tối ưu nhất. Mối quan hệ giữa hai đại lượng này được thể hiện thông qua đường cong đặc tính gas lift hay Gas Lift Performance Curve (GLPC)\nomenclature{GLPC}{Gas Lift Performance Curve}. Lưu lượng khí bơm ép tối ưu rất quan trọng, bơm dư hoặc thiếu khí đều làm giảm lưu lượng khai thác đồng thời tăng chi phí bơm ép. Mô hình phân phối lưu lượng khí sẽ được xây dựng dựa trên các tính chất của GLPC cho một giếng khai thác. Dòng chảy trong vỉa được giải sử chỉ bao gồm một pha lỏng, trong tubing sẽ là hai pha lỏng - khí, các điều kiện vật lý để tồn tại GLPC là duy nhất.\\
