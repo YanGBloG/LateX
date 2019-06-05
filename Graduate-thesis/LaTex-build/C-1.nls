@@ -2,44 +2,44 @@
 
  \nomgroup{A}
 
-  \item [{$\overline{\rho}$}]\begingroup Tỉ trọng hỗn hợp\nomeqref {1.17}
-		\nompageref{17}
-  \item [{$f$}]\begingroup Hệ số ma sát\nomeqref {1.17}
-		\nompageref{17}
-  \item [{$P_r$}]\begingroup Áp suất vỉa\nomeqref {1.14}
-		\nompageref{17}
-  \item [{$P_{wf}$}]\begingroup Áp suất dòng vào tại đáy giếng\nomeqref {1.14}
-		\nompageref{17}
-  \item [{$q_g$}]\begingroup Lưu lượng khí bơm ép (MSCF/d)\nomeqref {1.10}
-		\nompageref{15}
-  \item [{$q_l$}]\begingroup Lưu lượng khai thác (lỏng) (STB/d)\nomeqref {1.10}
-		\nompageref{15}
-  \item [{$q_o$}]\begingroup Lưu lượng dầu (STB/d)\nomeqref {1.11}
-		\nompageref{16}
-  \item [{$Q_{gav}$}]\begingroup Tổng lượng khí có sẵn\nomeqref {1.10}
-		\nompageref{15}
-  \item [{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.17}
-		\nompageref{17}
+  \item [{$\overline{\rho}$}]\begingroup Tỉ trọng hỗn hợp\nomeqref {1.28}
+		\nompageref{23}
+  \item [{$f$}]\begingroup Hệ số ma sát\nomeqref {1.28}
+		\nompageref{23}
+  \item [{$P_r$}]\begingroup Áp suất vỉa\nomeqref {1.25}
+		\nompageref{22}
+  \item [{$P_{wf}$}]\begingroup Áp suất dòng vào tại đáy giếng\nomeqref {1.25}
+		\nompageref{22}
+  \item [{$q_g$}]\begingroup Lưu lượng khí bơm ép (MSCF/d)\nomeqref {1.21}
+		\nompageref{21}
+  \item [{$q_l$}]\begingroup Lưu lượng khai thác (lỏng) (STB/d)\nomeqref {1.21}
+		\nompageref{21}
+  \item [{$q_o$}]\begingroup Lưu lượng dầu (STB/d)\nomeqref {1.22}
+		\nompageref{21}
+  \item [{$Q_{gav}$}]\begingroup Tổng lượng khí có sẵn\nomeqref {1.21}
+		\nompageref{21}
+  \item [{$u_m$}]\begingroup Vận tốc hỗn hợp (ft/s)\nomeqref {1.28}
+		\nompageref{23}
   \item [{AI}]\begingroup Artificial Intelligence\nomeqref {1.0}
 		\nompageref{8}
   \item [{ANN}]\begingroup mạng thần kinh nhân tạo\nomeqref {1.0}
 		\nompageref{8}
-  \item [{D}]\begingroup Đường kính tubing (in)\nomeqref {1.17}
-		\nompageref{17}
+  \item [{D}]\begingroup Đường kính tubing (in)\nomeqref {1.28}
+		\nompageref{23}
   \item [{ESP}]\begingroup Electrical Submersible Pump\nomeqref {1.0}
 		\nompageref{1}
   \item [{GA}]\begingroup Giải thuật di truyền\nomeqref {1.0}
 		\nompageref{8}
-  \item [{GLPC}]\begingroup Gas Lift Performance Curve\nomeqref {1.9}
-		\nompageref{15}
-  \item [{J}]\begingroup Chỉ số năng suất (STB/d/psi)\nomeqref {1.14}
-		\nompageref{16}
-  \item [{P}]\begingroup Áp suất\nomeqref {1.17}\nompageref{17}
-  \item [{WC}]\begingroup Hàm lượng nước\nomeqref {1.11}
-		\nompageref{15}
-  \item [{WOR}]\begingroup Tỉ số nước dầu\nomeqref {1.15}
-		\nompageref{17}
-  \item [{z}]\begingroup Chiều sâu giếng khoan\nomeqref {1.17}
-		\nompageref{17}
+  \item [{GLPC}]\begingroup Gas Lift Performance Curve\nomeqref {1.20}
+		\nompageref{21}
+  \item [{J}]\begingroup Chỉ số năng suất (STB/d/psi)\nomeqref {1.25}
+		\nompageref{22}
+  \item [{P}]\begingroup Áp suất\nomeqref {1.28}\nompageref{23}
+  \item [{WC}]\begingroup Hàm lượng nước\nomeqref {1.22}
+		\nompageref{21}
+  \item [{WOR}]\begingroup Tỉ số nước dầu\nomeqref {1.26}
+		\nompageref{23}
+  \item [{z}]\begingroup Chiều sâu giếng khoan\nomeqref {1.28}
+		\nompageref{23}
 
 \end{thenomenclature}
